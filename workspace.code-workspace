@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "Lua"
+		}
+	],
+	"settings": {
+		"lua.targetVersion": "5.3"
+	}
+}

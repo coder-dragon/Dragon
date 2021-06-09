@@ -2,7 +2,7 @@ local M = {}
 
 --异步方法转同步
 function M.async_to_sync(async_func, callback_pos)
-    return function()
+    return function(...)
         local _co = coroutine.running() or error("this function must be run in coroutine")
         local rets
         local waiting = false

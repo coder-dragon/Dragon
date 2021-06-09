@@ -38,8 +38,8 @@ namespace XLua
 				translator.RegisterPushAndGetAndUpdate<XLuaTest.MyStruct>(translator.PushXLuaTestMyStruct, translator.Get, translator.UpdateXLuaTestMyStruct);
 				translator.RegisterPushAndGetAndUpdate<XLuaTest.PushAsTableStruct>(translator.PushXLuaTestPushAsTableStruct, translator.Get, translator.UpdateXLuaTestPushAsTableStruct);
 				translator.RegisterPushAndGetAndUpdate<Tutorial.TestEnum>(translator.PushTutorialTestEnum, translator.Get, translator.UpdateTutorialTestEnum);
-				translator.RegisterPushAndGetAndUpdate<Tutorial.DerivedClass.TestEnumInner>(translator.PushTutorialDerivedClassTestEnumInner, translator.Get, translator.UpdateTutorialDerivedClassTestEnumInner);
 				translator.RegisterPushAndGetAndUpdate<XLuaTest.MyEnum>(translator.PushXLuaTestMyEnum, translator.Get, translator.UpdateXLuaTestMyEnum);
+				translator.RegisterPushAndGetAndUpdate<Tutorial.DerivedClass.TestEnumInner>(translator.PushTutorialDerivedClassTestEnumInner, translator.Get, translator.UpdateTutorialDerivedClassTestEnumInner);
 			
 			}
         }
@@ -855,90 +855,6 @@ namespace XLua
             }
         }
         
-        int TutorialDerivedClassTestEnumInner_TypeID = -1;
-		int TutorialDerivedClassTestEnumInner_EnumRef = -1;
-        
-        public void PushTutorialDerivedClassTestEnumInner(RealStatePtr L, Tutorial.DerivedClass.TestEnumInner val)
-        {
-            if (TutorialDerivedClassTestEnumInner_TypeID == -1)
-            {
-			    bool is_first;
-                TutorialDerivedClassTestEnumInner_TypeID = getTypeId(L, typeof(Tutorial.DerivedClass.TestEnumInner), out is_first);
-				
-				if (TutorialDerivedClassTestEnumInner_EnumRef == -1)
-				{
-				    Utils.LoadCSTable(L, typeof(Tutorial.DerivedClass.TestEnumInner));
-				    TutorialDerivedClassTestEnumInner_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
-				}
-				
-            }
-			
-			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, TutorialDerivedClassTestEnumInner_EnumRef) == 1)
-            {
-			    return;
-			}
-			
-            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, TutorialDerivedClassTestEnumInner_TypeID);
-            if (!CopyByValue.Pack(buff, 0, (int)val))
-            {
-                throw new Exception("pack fail fail for Tutorial.DerivedClass.TestEnumInner ,value="+val);
-            }
-			
-			LuaAPI.lua_getref(L, TutorialDerivedClassTestEnumInner_EnumRef);
-			LuaAPI.lua_pushvalue(L, -2);
-			LuaAPI.xlua_rawseti(L, -2, (int)val);
-			LuaAPI.lua_pop(L, 1);
-			
-        }
-		
-        public void Get(RealStatePtr L, int index, out Tutorial.DerivedClass.TestEnumInner val)
-        {
-		    LuaTypes type = LuaAPI.lua_type(L, index);
-            if (type == LuaTypes.LUA_TUSERDATA )
-            {
-			    if (LuaAPI.xlua_gettypeid(L, index) != TutorialDerivedClassTestEnumInner_TypeID)
-				{
-				    throw new Exception("invalid userdata for Tutorial.DerivedClass.TestEnumInner");
-				}
-				
-                IntPtr buff = LuaAPI.lua_touserdata(L, index);
-				int e;
-                if (!CopyByValue.UnPack(buff, 0, out e))
-                {
-                    throw new Exception("unpack fail for Tutorial.DerivedClass.TestEnumInner");
-                }
-				val = (Tutorial.DerivedClass.TestEnumInner)e;
-                
-            }
-            else
-            {
-                val = (Tutorial.DerivedClass.TestEnumInner)objectCasters.GetCaster(typeof(Tutorial.DerivedClass.TestEnumInner))(L, index, null);
-            }
-        }
-		
-        public void UpdateTutorialDerivedClassTestEnumInner(RealStatePtr L, int index, Tutorial.DerivedClass.TestEnumInner val)
-        {
-		    
-            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
-            {
-			    if (LuaAPI.xlua_gettypeid(L, index) != TutorialDerivedClassTestEnumInner_TypeID)
-				{
-				    throw new Exception("invalid userdata for Tutorial.DerivedClass.TestEnumInner");
-				}
-				
-                IntPtr buff = LuaAPI.lua_touserdata(L, index);
-                if (!CopyByValue.Pack(buff, 0,  (int)val))
-                {
-                    throw new Exception("pack fail for Tutorial.DerivedClass.TestEnumInner ,value="+val);
-                }
-            }
-			
-            else
-            {
-                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
-            }
-        }
-        
         int XLuaTestMyEnum_TypeID = -1;
 		int XLuaTestMyEnum_EnumRef = -1;
         
@@ -1014,6 +930,90 @@ namespace XLua
                 if (!CopyByValue.Pack(buff, 0,  (int)val))
                 {
                     throw new Exception("pack fail for XLuaTest.MyEnum ,value="+val);
+                }
+            }
+			
+            else
+            {
+                throw new Exception("try to update a data with lua type:" + LuaAPI.lua_type(L, index));
+            }
+        }
+        
+        int TutorialDerivedClassTestEnumInner_TypeID = -1;
+		int TutorialDerivedClassTestEnumInner_EnumRef = -1;
+        
+        public void PushTutorialDerivedClassTestEnumInner(RealStatePtr L, Tutorial.DerivedClass.TestEnumInner val)
+        {
+            if (TutorialDerivedClassTestEnumInner_TypeID == -1)
+            {
+			    bool is_first;
+                TutorialDerivedClassTestEnumInner_TypeID = getTypeId(L, typeof(Tutorial.DerivedClass.TestEnumInner), out is_first);
+				
+				if (TutorialDerivedClassTestEnumInner_EnumRef == -1)
+				{
+				    Utils.LoadCSTable(L, typeof(Tutorial.DerivedClass.TestEnumInner));
+				    TutorialDerivedClassTestEnumInner_EnumRef = LuaAPI.luaL_ref(L, LuaIndexes.LUA_REGISTRYINDEX);
+				}
+				
+            }
+			
+			if (LuaAPI.xlua_tryget_cachedud(L, (int)val, TutorialDerivedClassTestEnumInner_EnumRef) == 1)
+            {
+			    return;
+			}
+			
+            IntPtr buff = LuaAPI.xlua_pushstruct(L, 4, TutorialDerivedClassTestEnumInner_TypeID);
+            if (!CopyByValue.Pack(buff, 0, (int)val))
+            {
+                throw new Exception("pack fail fail for Tutorial.DerivedClass.TestEnumInner ,value="+val);
+            }
+			
+			LuaAPI.lua_getref(L, TutorialDerivedClassTestEnumInner_EnumRef);
+			LuaAPI.lua_pushvalue(L, -2);
+			LuaAPI.xlua_rawseti(L, -2, (int)val);
+			LuaAPI.lua_pop(L, 1);
+			
+        }
+		
+        public void Get(RealStatePtr L, int index, out Tutorial.DerivedClass.TestEnumInner val)
+        {
+		    LuaTypes type = LuaAPI.lua_type(L, index);
+            if (type == LuaTypes.LUA_TUSERDATA )
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != TutorialDerivedClassTestEnumInner_TypeID)
+				{
+				    throw new Exception("invalid userdata for Tutorial.DerivedClass.TestEnumInner");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+				int e;
+                if (!CopyByValue.UnPack(buff, 0, out e))
+                {
+                    throw new Exception("unpack fail for Tutorial.DerivedClass.TestEnumInner");
+                }
+				val = (Tutorial.DerivedClass.TestEnumInner)e;
+                
+            }
+            else
+            {
+                val = (Tutorial.DerivedClass.TestEnumInner)objectCasters.GetCaster(typeof(Tutorial.DerivedClass.TestEnumInner))(L, index, null);
+            }
+        }
+		
+        public void UpdateTutorialDerivedClassTestEnumInner(RealStatePtr L, int index, Tutorial.DerivedClass.TestEnumInner val)
+        {
+		    
+            if (LuaAPI.lua_type(L, index) == LuaTypes.LUA_TUSERDATA)
+            {
+			    if (LuaAPI.xlua_gettypeid(L, index) != TutorialDerivedClassTestEnumInner_TypeID)
+				{
+				    throw new Exception("invalid userdata for Tutorial.DerivedClass.TestEnumInner");
+				}
+				
+                IntPtr buff = LuaAPI.lua_touserdata(L, index);
+                if (!CopyByValue.Pack(buff, 0,  (int)val))
+                {
+                    throw new Exception("pack fail for Tutorial.DerivedClass.TestEnumInner ,value="+val);
                 }
             }
 			
@@ -1106,16 +1106,16 @@ namespace XLua
 				translator.PushTutorialTestEnum(L, array[index]);
 				return true;
 			}
-			else if (type == typeof(Tutorial.DerivedClass.TestEnumInner[]))
-			{
-			    Tutorial.DerivedClass.TestEnumInner[] array = obj as Tutorial.DerivedClass.TestEnumInner[];
-				translator.PushTutorialDerivedClassTestEnumInner(L, array[index]);
-				return true;
-			}
 			else if (type == typeof(XLuaTest.MyEnum[]))
 			{
 			    XLuaTest.MyEnum[] array = obj as XLuaTest.MyEnum[];
 				translator.PushXLuaTestMyEnum(L, array[index]);
+				return true;
+			}
+			else if (type == typeof(Tutorial.DerivedClass.TestEnumInner[]))
+			{
+			    Tutorial.DerivedClass.TestEnumInner[] array = obj as Tutorial.DerivedClass.TestEnumInner[];
+				translator.PushTutorialDerivedClassTestEnumInner(L, array[index]);
 				return true;
 			}
             return false;
@@ -1196,15 +1196,15 @@ namespace XLua
 				translator.Get(L, obj_idx, out array[array_idx]);
 				return true;
 			}
-			else if (type == typeof(Tutorial.DerivedClass.TestEnumInner[]))
-			{
-			    Tutorial.DerivedClass.TestEnumInner[] array = obj as Tutorial.DerivedClass.TestEnumInner[];
-				translator.Get(L, obj_idx, out array[array_idx]);
-				return true;
-			}
 			else if (type == typeof(XLuaTest.MyEnum[]))
 			{
 			    XLuaTest.MyEnum[] array = obj as XLuaTest.MyEnum[];
+				translator.Get(L, obj_idx, out array[array_idx]);
+				return true;
+			}
+			else if (type == typeof(Tutorial.DerivedClass.TestEnumInner[]))
+			{
+			    Tutorial.DerivedClass.TestEnumInner[] array = obj as Tutorial.DerivedClass.TestEnumInner[];
 				translator.Get(L, obj_idx, out array[array_idx]);
 				return true;
 			}
