@@ -4,7 +4,6 @@
 local Time = CS.UnityEngine.Time
 local dragon = require "dragon" 
 
-local M = {}
 local timer = 
 {
     count       = 1,
@@ -14,20 +13,17 @@ local timer =
     running     = false,
 }
 
-local mt = {}
-
-mt.__index = timer
+timer.__index = timer
 
 -- func     方法回调
 -- duration 等待时间
 -- loop     循环次数 -1为无限次
 -- scale    false 采用deltaTime计时，true 采用 unscaledDeltaTime计时
 function timer.new(func, duration, loop, scale)
-    local timer = {}
+    local self = setmetatable({}, timer)
     scale = scale or false and true
-    setmetatable(timer, mt)
     self:reset(func, duration, loop, scale)
-    return timer
+    return self
 end
 
 function timer:reset(func, duration, loop, scale)
@@ -78,3 +74,5 @@ function timer:update()
         end
     end
 end
+
+return timer
