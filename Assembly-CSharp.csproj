@@ -65,11 +65,17 @@
   <ItemGroup>
     <Compile Include="Assets\Dragon\Scripts\Bootstrap.cs" />
     <Compile Include="Assets\Dragon\Scripts\EditorOnly\ProjectPath.cs" />
+    <Compile Include="Assets\Dragon\Scripts\GameObjectExtenstion.cs" />
     <Compile Include="Assets\Dragon\Scripts\ILuaModul.cs" />
     <Compile Include="Assets\Dragon\Scripts\LuaExtensions\FileLoaders\FromDirectory.cs" />
     <Compile Include="Assets\Dragon\Scripts\LuaExtensions\LuaFieldPair.cs" />
     <Compile Include="Assets\Dragon\Scripts\LuaExtensions\LuaFieldType.cs" />
     <Compile Include="Assets\Dragon\Scripts\LuaExtensions\LuaInjection.cs" />
+    <Compile Include="Assets\Dragon\Scripts\LuaExtensions\UnityEngineObjectExtention.cs" />
+    <Compile Include="Assets\Dragon\Scripts\LuaExtensions\UnityEventHelper.cs" />
+    <Compile Include="Assets\Dragon\Scripts\MonoEventListeners\App.cs" />
+    <Compile Include="Assets\Dragon\Scripts\MonoEventListeners\EventHandler.cs" />
+    <Compile Include="Assets\Dragon\Scripts\MonoEventListeners\LifeCycle.cs" />
     <Compile Include="Assets\Dragon\Scripts\PathUtility.cs" />
     <Compile Include="Assets\Dragon\Scripts\Utilities\DontDestroyOnLoad.cs" />
     <Compile Include="Assets\Dragon\Scripts\XLuaModul.cs" />

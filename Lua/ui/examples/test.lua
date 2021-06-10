@@ -1,7 +1,7 @@
-local M = {}
+-- local M = {}
 
-function M:print_name()
-    print(self.gameobject.name)
-end
+-- function M:print_name()
+--     print(self.gameobject.name)
+-- end
 
-return M
+-- return M

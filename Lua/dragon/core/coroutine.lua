@@ -24,3 +24,5 @@ function M.async_to_sync(async_func, callback_pos)
         return unpack(rets)
     end
 end
+
+return M
