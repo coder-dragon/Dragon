@@ -6,6 +6,7 @@ local dragon = require "dragon"
 
 local timer = 
 {
+    __typename  = "timer",
     count       = 1,
     duration    = 1,
     loop        = 1,
@@ -33,7 +34,7 @@ function timer:reset(func, duration, loop, scale)
     self.scale      = false
     self.running	= false
 	self.count		= Time.frameCount + 1
-    self.time  = duration
+    self.time       = duration
 end
 
 function timer:start()
@@ -57,10 +58,10 @@ function timer:update()
         return
     end
 
-    local deltaa = self.scale and Time.deltaTime or Time.unscaledDeltaTime
+    local delta = self.scale and Time.deltaTime or Time.unscaledDeltaTime
     self.time = self.time - delta
     if self.time < 0 and Time.frameCount > self.count then
-        func()
+        self.func()
 
         if self.loop > 0 then
             self.loop = self.loop - 1
@@ -75,4 +76,42 @@ function timer:update()
     end
 end
 
-return timer
+local timers = {}
+setmetatable(timers, {__mode = "kv"})
+
+-- 获取一个帧数计数器对象
+-- return timer
+local function get(func, duration, loop, scale)
+    assert(func)
+    assert(duration and type(duration) == "number" and duration > 0)
+    local timer = timer.new(func, duration, loop, scale)
+    timers[func] = timer
+    return timer
+end
+
+-- 启动一个帧数计数器
+-- return timer
+local function start(func, duration, loop, scale)
+    assert(func)
+    assert(duration and type(duration) == "number" and duration > 0)
+    local timer = timer.new(func, duration, loop, scale)
+    timers[func] = timer
+    timer:start()
+    return timer
+end
+
+-- 停止一个帧数计数器
+local function stop(timer)
+    if type(timer) == "table" and timer.__typename == "timer" then
+        timer:stop()
+    else
+        error("it's not a timer")
+    end
+end
+
+return
+{
+    get     = get,
+    start   = start,
+    stop    = stop
+}

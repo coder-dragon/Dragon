@@ -26,7 +26,7 @@ local function find_gameobject(name)
 end
 
 return {
-    root,
+    root = root,
     create_gameobject = create_gameobject,
     find_gameobject = find_gameobject
 }

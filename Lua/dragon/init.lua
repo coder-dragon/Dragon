@@ -6,7 +6,7 @@
 -- 空表，并且无法对这个表进行赋值操作，适用于需要传空表的情况
 local empty = setmetatable({}, {
     __newindex = function(t, k , v)
-        error("无法对这个表进行赋值操作")
+        error("should not set any value to this table")
     end
 })
 
@@ -25,7 +25,7 @@ local function dump(value, options)
     if type(options) == "number" then
         nesting = options
     elseif type(options) == "table" then
-        desc = options.desc
+        desc = options.nesting
         nesting = options.nesting
     end
 
@@ -74,6 +74,7 @@ local function dump(value, options)
                     else
                         return tostring(a) < tostring(b)
                     end
+                    return false
                 end)
                 for i, k in ipairs(keys) do
                     _dump(values[k], k, indent2, nest + 1, keylen)
@@ -82,6 +83,7 @@ local function dump(value, options)
             end
         end
     end
+
     _dump(value, desc, "- ", 1)
 
     return table.concat(result, "\n")
@@ -107,7 +109,7 @@ local function module_search(t, name)
     local ret = def_modules[name]
     local ok, result
     if ret == nil then
-        local ok, result = pcall(require, "dragon."..name)
+        ok, result = pcall(require, "dragon."..name)
     elseif type(ret) == "table" then
         ok, result = true, ret
     elseif type(ret) == "function" then
@@ -125,7 +127,7 @@ local function module_search(t, name)
         end
         return result
     else
-        error(string.format("加载模块失败：%s:%s", name, result))
+        error(string.format("加载模块失败：%s  ->  %s", name, result))
     end
 end
 
@@ -153,8 +155,6 @@ local function package_exists(name)
 end
 
 return setmetatable({
-    class = require "blaze.core.class",
-    coroutine = require "blaze.core.coroutine",
     empty = empty,
     noop = noop,
     is_nil = is_nil,

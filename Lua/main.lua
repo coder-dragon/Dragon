@@ -1,17 +1,17 @@
-local promise = require "dragon.core.promise"
+-- local dragon = require "dragon"
 
-local p = promise.new(function(resolve, reject)
-    reject("成功结果")
-end)
+-- print("游戏入口函数")
 
-p:next(10):next(function(e)
-    print(e..1)
-end):catch(function(e)
-    print(e..3)
-end)
+-- print("先尝试注入gameobject对象")
+-- local ue = CS.UnityEngine
+-- local gameobject = ue.GameObject.Find("GameObject")
+-- local lua_injecttion = gameobject:GetComponent(typeof(CS.Dragon.LuaExtensions.LuaInjection))
 
-p.next(function( ... )
-    -- body
-end,function( ... )
-    print(e..4)
-end)
+-- local test = require "ui.examples.test"
+-- lua_injecttion:Inject(test)
+
+-- dragon.coroutine.start(function()
+--     dragon.coroutine.wait(5)
+--     test:print_name()
+-- end)
+

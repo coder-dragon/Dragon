@@ -30,7 +30,7 @@ local watchers =
 local function get_watchers_class(msg_name)
     local func = watchers[msg_name]
     assert(func, string.format("找不到消息定义：%s", msg_name))
-    return func
+    return func()
 end
 
 -- 注册事件

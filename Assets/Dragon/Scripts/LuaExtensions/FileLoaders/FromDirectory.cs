@@ -20,7 +20,7 @@ namespace Dragon.LuaExtensions.FileLoaders
             filePath = filePath.Replace(".", "/");
             byte[] bytes = readFileInternal($"{_rootPath}/{filePath}.lua", ref filePath);
             if (bytes == null)
-                bytes = readFileInternal($"{_rootPath}/{filePath}/.init.lua", ref filePath);
+                bytes = readFileInternal($"{_rootPath}/{filePath}/init.lua", ref filePath);
             return bytes;
         }
 

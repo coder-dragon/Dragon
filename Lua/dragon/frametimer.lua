@@ -4,9 +4,9 @@
 local Time = CS.UnityEngine.Time
 local dragon = require "dragon" 
 
-local M = {}
 local timer = 
 {
+    __typename  = "frametimer",
     count       = 1,
     duration    = 1,
     loop        = 1,
@@ -14,22 +14,18 @@ local timer =
     running     = false,
 }
 
-local mt = {}
-
-mt.__index = timer
-
+timer.__index = timer
 
 -- func     方法回调
 -- count    等待帧数
 -- loop     循环次数
 function timer.new(func, count, loop)
-    local timer = {}
-    setmetatable(timer, mt)
-    timer.count = Time.frameCount + count
-    timer.duration = count
-    timer.loop = loop
-    timer.func = func
-    return timer
+    local self = setmetatable({}, timer)
+    self.count = Time.frameCount + count
+    self.duration = count
+    self.loop = loop
+    self.func = func
+    return self
 end
 
 function timer:start()
@@ -52,8 +48,8 @@ function timer:update()
     if not self.running then
         return
     end
-    if Time.frameCount >= count then
-        func()
+    if Time.frameCount >= self.count then
+        self.func()
 
         if self.loop > 0 then
             self.loop = self.loop - 1
@@ -65,5 +61,44 @@ function timer:update()
             self.count = Time.frameCount + self.duration
         end
     end
-    
 end
+
+local timers = {}
+setmetatable(timers, {__mode = "kv"})
+
+-- 获取一个帧数计数器对象
+-- return timer
+local function get(func, count, loop)
+    assert(func)
+    assert(count and type(count) == "number" and count > 0)
+    local timer = timer.new(func, count, loop)
+    timers[func] = timer
+    return timer
+end
+
+-- 启动一个帧数计数器
+-- return timer
+local function start(func, count, loop)
+    assert(func)
+    assert(count and type(count) == "number" and count > 0)
+    local timer = timer.new(func, count, loop)
+    timers[func] = timer
+    timer:start(func, count, loop)
+    return timer
+end
+
+-- 停止一个帧数计数器
+local function stop(timer)
+    if type(timer) == "table" and timer.__typename == "frametimer" then
+        timer:stop()
+    else
+        error("it's not a frametimer")
+    end
+end
+
+return 
+{
+    get     = get,
+    start   = start,
+    stop    = stop
+}
