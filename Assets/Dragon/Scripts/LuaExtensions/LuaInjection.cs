@@ -7,7 +7,7 @@ using XLua;
 namespace Dragon.LuaExtensions
 {
     public class LuaInjection : MonoBehaviour
-    {
+    { 
         public List<LuaFieldPair> Fields = new List<LuaFieldPair>();
 
         /// <summary>

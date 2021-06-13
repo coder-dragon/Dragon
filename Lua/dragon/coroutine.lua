@@ -37,7 +37,7 @@ function coroutine.start(func, ...)
                 error(msg)
             end
         end
-        timer = frametimer.new(action, 0, 1)
+        timer = frametimer.start(action, 0, 1)
         co_timers[co] = timer
         timer:start()
     end
@@ -58,7 +58,7 @@ function coroutine.wait(t, co, ...)
             error(msg)
         end
     end
-    _timer = timer.new(action, t, 1)
+    _timer = timer.start(action, t, 1)
     co_timers[co] = _timer
     _timer:start()
     return yield()
@@ -77,7 +77,7 @@ function coroutine.step(t, co, ...)
             error(msg)
         end
     end
-    timer = frametimer.new(action, t or 1, 1)
+    timer = frametimer.start(action, t or 1, 1)
     co_timers[co] = timer
     timer:start()
     return yield()

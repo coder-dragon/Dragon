@@ -70,7 +70,7 @@ setmetatable(timers, {__mode = "kv"})
 -- return timer
 local function get(func, count, loop)
     assert(func)
-    assert(count and type(count) == "number" and count > 0)
+    assert(count and type(count) == "number" and count >= 0)
     local timer = timer.new(func, count, loop)
     timers[func] = timer
     return timer
@@ -80,7 +80,7 @@ end
 -- return timer
 local function start(func, count, loop)
     assert(func)
-    assert(count and type(count) == "number" and count > 0)
+    assert(count and type(count) == "number" and count >= 0)
     local timer = timer.new(func, count, loop)
     timers[func] = timer
     timer:start(func, count, loop)
