@@ -8,37 +8,37 @@ using UnityEngine;
 namespace Dragon.Loaders
 {
     /// <summary>
-    /// ×ÊÔ´¼ÓÔØÆ÷³éÏó»ùÀà
+    /// èµ„æºåŠ è½½å™¨æŠ½è±¡åŸºç±»
     /// </summary>
     public class AssetLoaderBase : IAssetLoader
     {
         /// <summary>
-        /// »ñÈ¡´íÎóĞÅÏ¢¡£
+        /// è·å–é”™è¯¯ä¿¡æ¯ã€‚
         /// </summary>
         public string Error { get; protected set; }
 
         /// <summary>
-        /// »ñÈ¡Ò»¸öÖµ£¬±íÊ¾¼ÓÔØÈÎÎñÊÇ·ñÒÑ¾­½áÊø¡£
+        /// è·å–ä¸€ä¸ªå€¼ï¼Œè¡¨ç¤ºåŠ è½½ä»»åŠ¡æ˜¯å¦å·²ç»ç»“æŸã€‚
         /// </summary>
         public bool IsDone { get; protected set; }
 
         /// <summary>
-        /// »ñÈ¡Ò»¸öÖµ£¬±íÊ¾¼ÓÔØÆ÷ÊÇ·ñ¼ÓÔØ³É¹¦¡£
+        /// è·å–ä¸€ä¸ªå€¼ï¼Œè¡¨ç¤ºåŠ è½½å™¨æ˜¯å¦åŠ è½½æˆåŠŸã€‚
         /// </summary>
         public bool IsOk => Error == null && Result != null;
 
         /// <summary>
-        /// »ñÈ¡¼ÓÔØ½ø¶È¡£
+        /// è·å–åŠ è½½è¿›åº¦ã€‚
         /// </summary>
         public virtual float Progress { get; private set; }
 
         /// <summary>
-        /// »ñÈ¡¼ÓÔØµÄ½á¹û¡£
+        /// è·å–åŠ è½½çš„ç»“æœã€‚
         /// </summary>
         public object Result { get; private set; }
 
         /// <summary>
-        /// »ñÈ¡×ÊÔ´¶¨Î»±êÊ¶·û¡£
+        /// è·å–èµ„æºå®šä½æ ‡è¯†ç¬¦ã€‚
         /// </summary>
         public string Uri { get; private set; }
 
@@ -54,22 +54,22 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// »ñÈ¡Ò»¸öÖµ£¬±íÊ¾¼ÓÔØÆ÷ÊÇ·ñÒÑ¾­Æô¶¯
+        /// è·å–ä¸€ä¸ªå€¼ï¼Œè¡¨ç¤ºåŠ è½½å™¨æ˜¯å¦å·²ç»å¯åŠ¨
         /// </summary>
         public bool IsStarted { get; private set; }
 
         /// <summary>
-        /// »ñÈ¡Ò»¸öÖµ£¬±íÊ¾¼ÓÔØÆ÷ÊÇ·ñÒÑ¾­ÊÍ·Å
+        /// è·å–ä¸€ä¸ªå€¼ï¼Œè¡¨ç¤ºåŠ è½½å™¨æ˜¯å¦å·²ç»é‡Šæ”¾
         /// </summary>
         public bool IsDisposed { get; private set; }
 
         /// <summary>
-        /// »ñÈ¡Ò»¸öÖµ£¬±íÊ¾¼ÓÔØÆ÷ÊÇ·ñÒÑ×¼±¸ºÃ±»ÊÍ·Å¡£
+        /// è·å–ä¸€ä¸ªå€¼ï¼Œè¡¨ç¤ºåŠ è½½å™¨æ˜¯å¦å·²å‡†å¤‡å¥½è¢«é‡Šæ”¾ã€‚
         /// </summary>
         public bool IsReadyForDispose => RefCount == 0 && !_isResurrected;
 
         /// <summary>
-        /// »ñÈ¡¼ÓÔØÆ÷µÄÒıÓÃ¼ÆÊı
+        /// è·å–åŠ è½½å™¨çš„å¼•ç”¨è®¡æ•°
         /// </summary>
         public int RefCount
         {
@@ -78,17 +78,17 @@ namespace Dragon.Loaders
             {
                 _refCount = value;
                 if (_refCount < 0)
-                    _log.Warn($"[{GetType().Name}]×ÊÔ´ÒıÓÃ¼ÆÊıÒì³£ {Uri} µ±Ç°¼ÆÊı£º{RefCount}");
+                    _log.Warn($"[{GetType().Name}]èµ„æºå¼•ç”¨è®¡æ•°å¼‚å¸¸ {Uri} å½“å‰è®¡æ•°ï¼š{RefCount}");
             }
         }
 
         /// <summary>
-        /// Æô¶¯¼ÓÔØÆ÷
+        /// å¯åŠ¨åŠ è½½å™¨
         /// </summary>
         public void Start()
         {
             _isResurrected = false;
-            // ÒÑ¼ÓÔØ×ÊÔ´³É¹¦£¬Ö±½Ó·µ»Ø
+            // å·²åŠ è½½èµ„æºæˆåŠŸï¼Œç›´æ¥è¿”å›
             if (IsDone)
             {
                 _finishCallbacks.ForEach((cb) => cb.DynamicInvoke(this));
@@ -110,9 +110,9 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// ÊÍ·Å¼ÓÔØÆ÷ËùÕ¼ÓÃµÄ×ÊÔ´
+        /// é‡Šæ”¾åŠ è½½å™¨æ‰€å ç”¨çš„èµ„æº
         /// </summary>
-        /// <param name="force">ÊÇ·ñÇ¿ÖÆÊÍ·Å</param>
+        /// <param name="force">æ˜¯å¦å¼ºåˆ¶é‡Šæ”¾</param>
         public void Dispose(bool force = false)
         {
             if (IsDisposed)
@@ -122,7 +122,7 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// µ±¼ÓÔØÆ÷Æô¶¯Ê±µ÷ÓÃ´Ë·½·¨
+        /// å½“åŠ è½½å™¨å¯åŠ¨æ—¶è°ƒç”¨æ­¤æ–¹æ³•
         /// </summary>
         protected virtual void OnStart()
         {
@@ -130,7 +130,7 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// µ±¼ÓÔØÆ÷ĞèÒª±»ÊÍ·ÅÊ±µ÷ÓÃ´Ë·½·¨
+        /// å½“åŠ è½½å™¨éœ€è¦è¢«é‡Šæ”¾æ—¶è°ƒç”¨æ­¤æ–¹æ³•
         /// </summary>
         protected virtual void OnDispose()
         {
@@ -141,36 +141,36 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// Ôö¼ÓÒ»¸ö¼ÓÔØÍê³ÉµÄ»Øµ÷¡£
+        /// å¢åŠ ä¸€ä¸ªåŠ è½½å®Œæˆçš„å›è°ƒã€‚
         /// </summary>
-        /// <param name="callback">»Øµ÷</param>
+        /// <param name="callback">å›è°ƒ</param>
         public void AddFinishCallback<T>(AssetLoaderFinishCallback<T> callback) where T : AssetLoaderBase
         {
             _finishCallbacks.Add(callback);
         }
 
         /// <summary>
-        /// Ôö¼ÓÒ»¸ö¼ÓÔØÍê³ÉµÄ»Øµ÷¡£
+        /// å¢åŠ ä¸€ä¸ªåŠ è½½å®Œæˆçš„å›è°ƒã€‚
         /// </summary>
-        /// <param name="callback">»Øµ÷</param>
+        /// <param name="callback">å›è°ƒ</param>
         public void AddFinishCallback(AssetLoaderFinishCallback callback)
         {
             _finishCallbacks.Add(callback);
         }
 
         /// <summary>
-        /// ÒÆ³ıÒ»¸ö¼ÓÔØÍê³ÉµÄ»Øµ÷¡£
+        /// ç§»é™¤ä¸€ä¸ªåŠ è½½å®Œæˆçš„å›è°ƒã€‚
         /// </summary>
-        /// <param name="callback">»Øµ÷</param>
+        /// <param name="callback">å›è°ƒ</param>
         public void RemoveFinishCallback<T>(AssetLoaderFinishCallback<T> callback) where T : AssetLoaderBase
         {
             _finishCallbacks.Remove(callback);
         }
 
         /// <summary>
-        /// ÒÆ³ıÒ»¸ö¼ÓÔØÍê³ÉµÄ»Øµ÷¡£
+        /// ç§»é™¤ä¸€ä¸ªåŠ è½½å®Œæˆçš„å›è°ƒã€‚
         /// </summary>
-        /// <param name="callback">»Øµ÷</param>
+        /// <param name="callback">å›è°ƒ</param>
         public void RemoveFinishCallback(AssetLoaderFinishCallback callback)
         {
             _finishCallbacks.Remove(callback);
@@ -184,7 +184,7 @@ namespace Dragon.Loaders
 
         #region Call by AssetLoaderPool
         /// <summary>
-        /// ±ê¼ÇÒ»¸ö×´Ì¬£¬±íÊ¾µ±Ç°×ÊÔ´¼ÓÔØÆ÷²»ÔÚ³ØÖĞ£¬µ«ÊÇÎ´±»Ê¹ÓÃ
+        /// æ ‡è®°ä¸€ä¸ªçŠ¶æ€ï¼Œè¡¨ç¤ºå½“å‰èµ„æºåŠ è½½å™¨ä¸åœ¨æ± ä¸­ï¼Œä½†æ˜¯æœªè¢«ä½¿ç”¨
         /// </summary>
         public void Resurrect()
         {
@@ -192,7 +192,7 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// ´Ó³ØÖĞ´´½¨¸Ã¼ÓÔØÆ÷¶ÔÏó£¬¸Ã·½·¨ÓÉ³Øµ÷ÓÃ¡£
+        /// ä»æ± ä¸­åˆ›å»ºè¯¥åŠ è½½å™¨å¯¹è±¡ï¼Œè¯¥æ–¹æ³•ç”±æ± è°ƒç”¨ã€‚
         /// </summary>
         public void CreateFromPool(string uri)
         {
@@ -207,7 +207,7 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// ½«¸Ã¼ÓÔØÆ÷»ØÊÕµ½³ØÖĞ£¬¸Ã·½·¨ÓÉ³Øµ÷ÓÃ¡£
+        /// å°†è¯¥åŠ è½½å™¨å›æ”¶åˆ°æ± ä¸­ï¼Œè¯¥æ–¹æ³•ç”±æ± è°ƒç”¨ã€‚
         /// </summary>
         public void ReturnToPool()
         {

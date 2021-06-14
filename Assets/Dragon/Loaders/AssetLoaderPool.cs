@@ -8,7 +8,7 @@ using UnityEngine.PlayerLoop;
 namespace Dragon.Loaders
 {
     /// <summary>
-    /// ¿ÉÖØÓÃµÄ×ÊÔ´¼ÓÔØÆ÷µÄ³ØÊµÏÖ¡£
+    /// å¯é‡ç”¨çš„èµ„æºåŠ è½½å™¨çš„æ± å®ç°ã€‚
     /// </summary>
     [Singleton]
     public class AssetLoaderPool : MonoBehaviour
@@ -34,15 +34,15 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// »ñÈ¡»òÉèÖÃ×Ô¶¯ÇåÀíµÄÊ±¼ä¼ä¸ô¡£
+        /// è·å–æˆ–è®¾ç½®è‡ªåŠ¨æ¸…ç†çš„æ—¶é—´é—´éš”ã€‚
         /// </summary>
         public static float CleanupInterval { get; set; } = 10f;
 
         /// <summary>
-        /// ´´½¨Ö¸¶¨ÀàĞÍµÄ×ÊÔ´¼ÓÔØÆ÷¡£
+        /// åˆ›å»ºæŒ‡å®šç±»å‹çš„èµ„æºåŠ è½½å™¨ã€‚
         /// </summary>
-        /// <param name="type">¼ÓÔØÆ÷ÀàĞÍ</param>
-        /// <param name="uri">×ÊÔ´¶¨Î»±êÊ¶·û</param>
+        /// <param name="type">åŠ è½½å™¨ç±»å‹</param>
+        /// <param name="uri">èµ„æºå®šä½æ ‡è¯†ç¬¦</param>
         public static AssetLoaderBase Create(Type type, string uri)
         {
             var ret = (AssetLoaderBase)Activator.CreateInstance(type);
@@ -51,9 +51,9 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// ´´½¨Ö¸¶¨ÀàĞÍµÄ×ÊÔ´¼ÓÔØÆ÷¡£
+        /// åˆ›å»ºæŒ‡å®šç±»å‹çš„èµ„æºåŠ è½½å™¨ã€‚
         /// </summary>
-        /// <param name="uri">×ÊÔ´¶¨Î»±êÊ¶·û</param>
+        /// <param name="uri">èµ„æºå®šä½æ ‡è¯†ç¬¦</param>
         public static T Create<T>(string uri) where T : AssetLoaderBase, new()
         {
             var ret = Activator.CreateInstance<T>();
@@ -62,10 +62,10 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// ´Ó³ØÖĞ»ñÈ¡Ò»¸öÖ¸¶¨ÀàĞÍµÄ¼ÓÔØÆ÷£¬Èô²»´æÔÚÔò´´½¨Ò»¸öĞÂµÄ
+        /// ä»æ± ä¸­è·å–ä¸€ä¸ªæŒ‡å®šç±»å‹çš„åŠ è½½å™¨ï¼Œè‹¥ä¸å­˜åœ¨åˆ™åˆ›å»ºä¸€ä¸ªæ–°çš„
         /// </summary>
-        /// <param name="type">×ÊÔ´¼ÓÔØÆ÷ÀàĞÍ</param>
-        /// <param name="uri">×ÊÔ´¶¨Î»±êÊ¶·û</param>
+        /// <param name="type">èµ„æºåŠ è½½å™¨ç±»å‹</param>
+        /// <param name="uri">èµ„æºå®šä½æ ‡è¯†ç¬¦</param>
         /// <returns></returns>
         public static AssetLoaderBase Get(Type type, string uri)
         {
@@ -87,16 +87,16 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// ´Ó³ØÖĞ»ñÈ¡Ò»¸öÖ¸¶¨ÀàĞÍµÄ¼ÓÔØÆ÷£¬Èô²»´æÔÚÔò´´½¨Ò»¸öĞÂµÄ
+        /// ä»æ± ä¸­è·å–ä¸€ä¸ªæŒ‡å®šç±»å‹çš„åŠ è½½å™¨ï¼Œè‹¥ä¸å­˜åœ¨åˆ™åˆ›å»ºä¸€ä¸ªæ–°çš„
         /// </summary>
-        /// <param name="uri">×ÊÔ´¶¨Î»±êÊ¶·û</param>
+        /// <param name="uri">èµ„æºå®šä½æ ‡è¯†ç¬¦</param>
         public static T Get<T>(string uri) where T : AssetLoaderBase
         {
             return (T)Get(typeof(T), uri);
         }
 
         /// <summary>
-        /// »ØÊÕÖ¸¶¨µÄ×ÊÔ´¼ÓÔØÆ÷
+        /// å›æ”¶æŒ‡å®šçš„èµ„æºåŠ è½½å™¨
         /// </summary>
         /// <param name="loader"></param>
         public static void Put(AssetLoaderBase loader)
@@ -112,7 +112,7 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// Ç¿ÖÆÇåÀíËùÓĞ×ÊÔ´¼ÓÔØÆ÷£¬É÷ÓÃ
+        /// å¼ºåˆ¶æ¸…ç†æ‰€æœ‰èµ„æºåŠ è½½å™¨ï¼Œæ…ç”¨
         /// </summary>
         public static void UnLoadAll()
         {
@@ -129,7 +129,7 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// ÇåÀíËùÓĞ¿ÉĞ¶ÔØ×ÊÔ´¼ÓÔØÆ÷
+        /// æ¸…ç†æ‰€æœ‰å¯å¸è½½èµ„æºåŠ è½½å™¨
         /// </summary>
         private static void cleanup()
         {
@@ -160,7 +160,7 @@ namespace Dragon.Loaders
         }
 
         /// <summary>
-        /// ³õÊ¼»¯¹ÜÀíÆ÷¡£
+        /// åˆå§‹åŒ–ç®¡ç†å™¨ã€‚
         /// </summary>
         [RuntimeInitializeOnLoadMethod]
         public static void Initialize()

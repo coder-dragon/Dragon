@@ -1,5 +1,4 @@
-﻿#if UNITY_EDITOR
-using System;
+﻿using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -148,5 +147,3 @@ namespace Dragon.EditorOnly
         private static string mCachedProjectStreamingAssetsPath;
     }
 }
-
-#endif
