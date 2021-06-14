@@ -5,14 +5,14 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Dragon.Edtor.LuaExtensions
+namespace Dragon.Editor.LuaExtensions
 {
     public static class LuaInjectionUtility
     {
         public static System.Func<GameObject, Component> ComponentTypeInferenceHook;
 
         /// <summary>
-        /// ÓÎÏ·ĞèÒªµÄ×é¼şÀàĞÍÍÆ¶Ï
+        /// æ¸¸æˆéœ€è¦çš„ç»„ä»¶ç±»å‹æ¨æ–­
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
@@ -87,7 +87,7 @@ namespace Dragon.Edtor.LuaExtensions
         }
 
         /// <summary>
-        /// //Èç¹ûobjÊÇÒ»¸öTexture2D asset£¬Ôò³¢ÊÔ×ª»»³ÉÒ»¸öSprite
+        /// //å¦‚æœobjæ˜¯ä¸€ä¸ªTexture2D assetï¼Œåˆ™å°è¯•è½¬æ¢æˆä¸€ä¸ªSprite
         /// </summary>
         /// <param name="obj"></param>
         public static void TryConvertToSpriteAsset(ref UnityEngine.Object obj)
@@ -97,8 +97,8 @@ namespace Dragon.Edtor.LuaExtensions
                 string path = AssetDatabase.GetAssetPath(obj);
                 if (!string.IsNullOrEmpty(path))
                 {
-                    //µ±Ò»¸ötexture2dÖ»°üº¬Ò»¸öspriteµÄÊ±ºò£¬²Å×ª»»³Ésprite
-                    //·ñÔòÈÏÎªÄãÒªÍÏ¶¯µÄ¾ÍÊÇÒ»¸ötexture2d
+                    //å½“ä¸€ä¸ªtexture2dåªåŒ…å«ä¸€ä¸ªspriteçš„æ—¶å€™ï¼Œæ‰è½¬æ¢æˆsprite
+                    //å¦åˆ™è®¤ä¸ºä½ è¦æ‹–åŠ¨çš„å°±æ˜¯ä¸€ä¸ªtexture2d
                     var objs = AssetDatabase.LoadAllAssetsAtPath(path);
                     int spriteCount = objs.Count(x => x is Sprite);
                     if (spriteCount == 1)
@@ -110,10 +110,10 @@ namespace Dragon.Edtor.LuaExtensions
         }
 
         /// <summary>
-        /// ³¢ÊÔ½«Lua×Ö¶ÎĞÅÏ¢µÄÀàĞÍ±ä¸üÎªĞÂÀàĞÍ¡£
+        /// å°è¯•å°†Luaå­—æ®µä¿¡æ¯çš„ç±»å‹å˜æ›´ä¸ºæ–°ç±»å‹ã€‚
         /// </summary>
-        /// <param name="newType">ĞÂÀàĞÍ</param>
-        /// <returns>ÊÇ·ñ±ä¸ü³É¹¦</returns>
+        /// <param name="newType">æ–°ç±»å‹</param>
+        /// <returns>æ˜¯å¦å˜æ›´æˆåŠŸ</returns>
         public static bool TryConvertToLuaField(LuaFieldPair filePair, LuaFieldType newType)
         {
             if (filePair.T == newType)

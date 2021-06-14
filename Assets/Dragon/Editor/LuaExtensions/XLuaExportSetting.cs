@@ -1,10 +1,11 @@
-﻿using Dragon;
+using Dragon;
 using Dragon.LuaExtensions;
 using System;
 using System.Collections.Generic;
+using Dragon.Pooling;
 using XLua;
 
-namespace Dragon.Edtor.LuaExtensions
+namespace Dragon.Editor.LuaExtensions
 {
     /// <summary>
     /// XLua导出配置
@@ -29,7 +30,8 @@ namespace Dragon.Edtor.LuaExtensions
         [LuaCallCSharp]
         public static List<Type> LuaCallCSharp = new List<Type>
         {
-            typeof(LuaInjection)
+            typeof(LuaInjection),
+            typeof(GameObjectPool)
         };
     }
 }

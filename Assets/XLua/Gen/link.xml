@@ -67,6 +67,7 @@
 		<type fullname="XLuaTest.FooExtension" preserve="all"/>
 		<type fullname="Tutorial.DerivedClass+TestEnumInner" preserve="all"/>
 		<type fullname="Dragon.LuaExtensions.LuaInjection" preserve="all"/>
+		<type fullname="Dragon.Pooling.GameObjectPool" preserve="all"/>
 		
 	</assembly>
 

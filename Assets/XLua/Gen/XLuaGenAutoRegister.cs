@@ -166,6 +166,9 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(Dragon.LuaExtensions.LuaInjection), DragonLuaExtensionsLuaInjectionWrap.__Register);
         
         
+            translator.DelayWrapLoader(typeof(Dragon.Pooling.GameObjectPool), DragonPoolingGameObjectPoolWrap.__Register);
+        
+        
         
         }
         

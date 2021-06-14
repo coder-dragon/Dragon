@@ -18,7 +18,6 @@ namespace XLuaTest
             luaenv.DoString("CS.XLuaTest.RawObjectTest.PrintType(1234)");
             //通过一个继承RawObject的类，能实现指明以一个int来传递
             luaenv.DoString("CS.XLuaTest.RawObjectTest.PrintType(CS.XLua.Cast.Int32(1234))");
-
             luaenv.Dispose();
         }
 

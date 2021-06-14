@@ -6,13 +6,13 @@ using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace Dragon.Edtor.LuaExtensions
+namespace Dragon.Editor.LuaExtensions
 {
     /// <summary>
     /// 扩展<see cref="LuaInjection"/>在编辑器面板中的显示操作逻辑
     /// </summary>
     [CustomEditor(typeof(LuaInjection))]
-    public class LuaInjectionInspector : Editor
+    public class LuaInjectionInspector : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {
