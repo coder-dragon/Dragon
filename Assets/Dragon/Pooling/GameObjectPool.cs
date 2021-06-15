@@ -22,14 +22,20 @@ namespace Dragon.Pooling
         /// 获取对象池的根节点
         /// </summary>
         public Transform Root { get; }
-
         
-        
+        /// <summary>
+        /// 从对象池中获取一个对象
+        /// </summary>
+        /// <returns>可用的对象</returns>
         public override GameObject Get()
         {
             return getNextAvailableGameObject();
         }
 
+        /// <summary>
+        /// 将指定对象回收到对象池
+        /// </summary>
+        /// <param name="obj">对象</param>
         public override void Put(GameObject obj)
         {
             var pgo = obj.GetComponent<PoolGameObject>();
@@ -39,6 +45,10 @@ namespace Dragon.Pooling
             put(pgo);
         }
 
+        /// <summary>
+        /// 当需要创建一个新的对象时调用此方法
+        /// </summary>
+        /// <returns>新创建的对象</returns>
         protected override GameObject Create()
         {
             var go = (GameObject) Object.Instantiate(_prefab);
@@ -47,17 +57,12 @@ namespace Dragon.Pooling
             return go;
         }
 
+        /// <summary>
+        /// 释放对象池
+        /// </summary>
         public void Dispose()
         {
-            if (DragonEngine.IsShuttingDown)
-                return;
-            while (_availiableObjects.Count > 0)
-            {
-                var pgo = _availiableObjects.Pop();
-                if(pgo != null)
-                    Object.Destroy(pgo);
-            }
-
+            Clear();
             if (_inUseObjects.Count > 0)
             {
                 foreach (var pgo in _inUseObjects)
@@ -70,7 +75,22 @@ namespace Dragon.Pooling
             Object.Destroy(Root.gameObject);
         }
 
-        public GameObjectPool(int id, Object prefab, Transform root, int initialCount = 1, PoolInflationType inflationType = PoolInflationType.Increment)
+        /// <summary>
+        /// 清理对象池
+        /// </summary>
+        public void Clear()
+        {
+            if (DragonEngine.IsShuttingDown)
+                return;
+            while (_availiableObjects.Count > 0)
+            {
+                var pgo = _availiableObjects.Pop();
+                if(pgo != null)
+                    Object.Destroy(pgo);
+            }
+        }
+
+        public GameObjectPool(int id, Object prefab, Transform root, int initialSize = 1, PoolInflationType inflationType = PoolInflationType.Increment)
         {
             Assert.IsNotNull(prefab,"prefab can not be null");
             Id = id;
@@ -79,7 +99,7 @@ namespace Dragon.Pooling
             GameObject go = new GameObject(prefab.name);
             go.SetActive(false);
             Root = go.transform;
-            populatePool(initialCount);
+            populatePool(initialSize);
         }
 
         private void populatePool(int initialCount)

@@ -10,7 +10,7 @@ using LuaCSFunction = XLua.LuaDLL.lua_CSFunction;
 
 using XLua;
 using System.Collections.Generic;
-
+using Dragon;
 
 namespace XLua.CSObjectWrap
 {
@@ -21,7 +21,7 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(UnityEngine.GameObject);
-			Utils.BeginObjectRegister(type, L, translator, 0, 13, 9, 3);
+			Utils.BeginObjectRegister(type, L, translator, 0, 17, 8, 3);
 			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetComponent", _m_GetComponent);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetComponentInChildren", _m_GetComponentInChildren);
@@ -36,6 +36,10 @@ namespace XLua.CSObjectWrap
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "AddComponent", _m_AddComponent);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "SetActive", _m_SetActive);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "CompareTag", _m_CompareTag);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetOrAddComponent", _m_GetOrAddComponent);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "GetFromPool", _m_GetFromPool);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "ReturnToPool", _m_ReturnToPool);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "CreatePool", _m_CreatePool);
 			
 			
 			Utils.RegisterFunc(L, Utils.GETTER_IDX, "transform", _g_get_transform);
@@ -45,7 +49,6 @@ namespace XLua.CSObjectWrap
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "isStatic", _g_get_isStatic);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "tag", _g_get_tag);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "scene", _g_get_scene);
-            Utils.RegisterFunc(L, Utils.GETTER_IDX, "sceneCullingMask", _g_get_sceneCullingMask);
             Utils.RegisterFunc(L, Utils.GETTER_IDX, "gameObject", _g_get_gameObject);
             
 			Utils.RegisterFunc(L, Utils.SETTER_IDX, "layer", _s_set_layer);
@@ -247,9 +250,7 @@ namespace XLua.CSObjectWrap
                 UnityEngine.GameObject gen_to_be_invoked = (UnityEngine.GameObject)translator.FastGetCSObj(L, 1);
             
             
-			    int gen_param_count = LuaAPI.lua_gettop(L);
-            
-                if(gen_param_count == 2&& translator.Assignable<System.Type>(L, 2)) 
+                
                 {
                     System.Type _type = (System.Type)translator.GetObject(L, 2, typeof(System.Type));
                     
@@ -260,24 +261,10 @@ namespace XLua.CSObjectWrap
                     
                     return 1;
                 }
-                if(gen_param_count == 3&& translator.Assignable<System.Type>(L, 2)&& LuaTypes.LUA_TBOOLEAN == LuaAPI.lua_type(L, 3)) 
-                {
-                    System.Type _type = (System.Type)translator.GetObject(L, 2, typeof(System.Type));
-                    bool _includeInactive = LuaAPI.lua_toboolean(L, 3);
-                    
-                        var gen_ret = gen_to_be_invoked.GetComponentInParent( _type, _includeInactive );
-                        translator.Push(L, gen_ret);
-                    
-                    
-                    
-                    return 1;
-                }
                 
             } catch(System.Exception gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
             }
-            
-            return LuaAPI.luaL_error(L, "invalid arguments to UnityEngine.GameObject.GetComponentInParent!");
             
         }
         
@@ -839,6 +826,132 @@ namespace XLua.CSObjectWrap
             
         }
         
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_GetOrAddComponent(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                UnityEngine.GameObject gen_to_be_invoked = (UnityEngine.GameObject)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    System.Type _type = (System.Type)translator.GetObject(L, 2, typeof(System.Type));
+                    
+                        var gen_ret = gen_to_be_invoked.GetOrAddComponent( _type );
+                        translator.Push(L, gen_ret);
+                    
+                    
+                    
+                    return 1;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_GetFromPool(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                UnityEngine.GameObject gen_to_be_invoked = (UnityEngine.GameObject)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    
+                        var gen_ret = gen_to_be_invoked.GetFromPool(  );
+                        translator.Push(L, gen_ret);
+                    
+                    
+                    
+                    return 1;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_ReturnToPool(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                UnityEngine.GameObject gen_to_be_invoked = (UnityEngine.GameObject)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    
+                    gen_to_be_invoked.ReturnToPool(  );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_CreatePool(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                UnityEngine.GameObject gen_to_be_invoked = (UnityEngine.GameObject)translator.FastGetCSObj(L, 1);
+            
+            
+			    int gen_param_count = LuaAPI.lua_gettop(L);
+            
+                if(gen_param_count == 1) 
+                {
+                    
+                    gen_to_be_invoked.CreatePool(  );
+                    
+                    
+                    
+                    return 0;
+                }
+                if(gen_param_count == 2&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 2)) 
+                {
+                    int _initialSize = LuaAPI.xlua_tointeger(L, 2);
+                    
+                        var gen_ret = gen_to_be_invoked.CreatePool( _initialSize );
+                        LuaAPI.xlua_pushinteger(L, gen_ret);
+                    
+                    
+                    
+                    return 1;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+            return LuaAPI.luaL_error(L, "invalid arguments to UnityEngine.GameObject.CreatePool!");
+            
+        }
+        
         
         
         
@@ -934,20 +1047,6 @@ namespace XLua.CSObjectWrap
 			
                 UnityEngine.GameObject gen_to_be_invoked = (UnityEngine.GameObject)translator.FastGetCSObj(L, 1);
                 translator.Push(L, gen_to_be_invoked.scene);
-            } catch(System.Exception gen_e) {
-                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
-            }
-            return 1;
-        }
-        
-        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-        static int _g_get_sceneCullingMask(RealStatePtr L)
-        {
-		    try {
-                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
-			
-                UnityEngine.GameObject gen_to_be_invoked = (UnityEngine.GameObject)translator.FastGetCSObj(L, 1);
-                LuaAPI.lua_pushuint64(L, gen_to_be_invoked.sceneCullingMask);
             } catch(System.Exception gen_e) {
                 return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
             }

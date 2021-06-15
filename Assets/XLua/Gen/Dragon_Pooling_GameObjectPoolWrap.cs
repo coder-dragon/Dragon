@@ -21,11 +21,12 @@ namespace XLua.CSObjectWrap
         {
 			ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
 			System.Type type = typeof(Dragon.Pooling.GameObjectPool);
-			Utils.BeginObjectRegister(type, L, translator, 0, 3, 2, 0);
+			Utils.BeginObjectRegister(type, L, translator, 0, 4, 2, 0);
 			
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "Get", _m_Get);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "Put", _m_Put);
 			Utils.RegisterFunc(L, Utils.METHOD_IDX, "Dispose", _m_Dispose);
+			Utils.RegisterFunc(L, Utils.METHOD_IDX, "Clear", _m_Clear);
 			
 			
 			Utils.RegisterFunc(L, Utils.GETTER_IDX, "Id", _g_get_Id);
@@ -57,10 +58,10 @@ namespace XLua.CSObjectWrap
 					int _id = LuaAPI.xlua_tointeger(L, 2);
 					UnityEngine.Object _prefab = (UnityEngine.Object)translator.GetObject(L, 3, typeof(UnityEngine.Object));
 					UnityEngine.Transform _root = (UnityEngine.Transform)translator.GetObject(L, 4, typeof(UnityEngine.Transform));
-					int _initialCount = LuaAPI.xlua_tointeger(L, 5);
+					int _initialSize = LuaAPI.xlua_tointeger(L, 5);
 					Dragon.Pooling.PoolInflationType _inflationType;translator.Get(L, 6, out _inflationType);
 					
-					var gen_ret = new Dragon.Pooling.GameObjectPool(_id, _prefab, _root, _initialCount, _inflationType);
+					var gen_ret = new Dragon.Pooling.GameObjectPool(_id, _prefab, _root, _initialSize, _inflationType);
 					translator.Push(L, gen_ret);
                     
 					return 1;
@@ -70,9 +71,9 @@ namespace XLua.CSObjectWrap
 					int _id = LuaAPI.xlua_tointeger(L, 2);
 					UnityEngine.Object _prefab = (UnityEngine.Object)translator.GetObject(L, 3, typeof(UnityEngine.Object));
 					UnityEngine.Transform _root = (UnityEngine.Transform)translator.GetObject(L, 4, typeof(UnityEngine.Transform));
-					int _initialCount = LuaAPI.xlua_tointeger(L, 5);
+					int _initialSize = LuaAPI.xlua_tointeger(L, 5);
 					
-					var gen_ret = new Dragon.Pooling.GameObjectPool(_id, _prefab, _root, _initialCount);
+					var gen_ret = new Dragon.Pooling.GameObjectPool(_id, _prefab, _root, _initialSize);
 					translator.Push(L, gen_ret);
                     
 					return 1;
@@ -175,6 +176,33 @@ namespace XLua.CSObjectWrap
                 {
                     
                     gen_to_be_invoked.Dispose(  );
+                    
+                    
+                    
+                    return 0;
+                }
+                
+            } catch(System.Exception gen_e) {
+                return LuaAPI.luaL_error(L, "c# exception:" + gen_e);
+            }
+            
+        }
+        
+        [MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+        static int _m_Clear(RealStatePtr L)
+        {
+		    try {
+            
+                ObjectTranslator translator = ObjectTranslatorPool.Instance.Find(L);
+            
+            
+                Dragon.Pooling.GameObjectPool gen_to_be_invoked = (Dragon.Pooling.GameObjectPool)translator.FastGetCSObj(L, 1);
+            
+            
+                
+                {
+                    
+                    gen_to_be_invoked.Clear(  );
                     
                     
                     

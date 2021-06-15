@@ -40,7 +40,7 @@ namespace Dragon
         /// <param name="updatable">自我更新的对象</param>
         public void RegisterUpdate(IUpdatable updatable)
         {
-            throw new NotImplementedException();
+            updatables.Add(updatable);
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Dragon
         /// <param name="updatable">自我更新的对象</param>
         public void UnRegisterUpdate(IUpdatable updatable)
         {
-            throw new NotImplementedException();
+            updatables.Remove(updatable);
         }
         #endregion
 

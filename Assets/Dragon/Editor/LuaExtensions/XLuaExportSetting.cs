@@ -30,8 +30,11 @@ namespace Dragon.Editor.LuaExtensions
         [LuaCallCSharp]
         public static List<Type> LuaCallCSharp = new List<Type>
         {
+            #region Dragon
             typeof(LuaInjection),
-            typeof(GameObjectPool)
+            typeof(GameObjectPool),
+            typeof(GameObjectExtenstion)
+            #endregion
         };
     }
 }
