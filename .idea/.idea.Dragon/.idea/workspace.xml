@@ -1,68 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Dragon/MonoEventListeners/EventTriggerListener.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dragon/MonoEventListeners/EventTriggerListener.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dragon/MonoEventListeners/UIBehaviourEventListener.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dragon/MonoEventListeners/UIBehaviourEventListener.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/core/class.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/core/promise.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/ui/binders.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/ui/binders.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/ui/examples/demo.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/Demo.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/Demo/Demo.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/Demo/Demo.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/LoadElement.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/LoadElement/ElementGameObject.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/LoadElement/ElementGameObject.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/LoadGameObject.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/LoadGameObject/GameObject.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/LoadGameObject/GameObject.prefab.meta" afterDir="false" />
+    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="-- 规范化测试用例&#10;-- 新增c#事件绑定类 EventTriggerListeners&#10;-- 新增lua端事件绑定类binders&#10;-- 完成游戏元素对象的编写&#10;-- 移动 primose，class 到游戏核心模块core&#10;-- 修改GameObjectPool的bug，没有绑定到管理类父节点下&#10;-- 新增UnityEngineObjectExtention绑定xlua导出">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/XLuaExportSetting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/XLuaExportSetting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dragon/Pooling/GameObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dragon/Pooling/GameObjectPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/class.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/core/class.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/class.lua.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/init.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/init.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/promise.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/core/promise.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/promise.lua.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/main.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/ui/examples/test.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/ui/examples/demo.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/ui/examples/test.lua.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/GameObject.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Example/GameObject.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/Bootstrap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/Dragon_GameObjectExtenstionWrap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Dragon_GameObjectExtenstionWrap.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/Dragon_Pooling_GameObjectPoolWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Dragon_Pooling_GameObjectPoolWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_BoundsWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_BoundsWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ColorWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ColorWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_GameObjectWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_GameObjectWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_LightWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_LightWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ObjectWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ObjectWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ParticleSystemWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ParticleSystemWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_QuaternionWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_QuaternionWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Ray2DWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Ray2DWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_RayWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_RayWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_RendererWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_RendererWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ResourcesWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ResourcesWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_SkinnedMeshRendererWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_SkinnedMeshRendererWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_TextAssetWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_TextAssetWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_TimeWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_TimeWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector2Wrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector2Wrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector3Wrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector3Wrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector4Wrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector4Wrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/XLuaGenAutoRegister.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/XLuaGenAutoRegister.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/link.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/link.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,30 +29,31 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/ILuaModul.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/EditorOnly/ProjectPath.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_GameObjectWrap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/LuaInjectionUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderCallback.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoadMode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC8169CC-22E2-4518-9C02-A7252A12ABE1/a0/5641618d/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Project/Unity-Project/Dragon/Assets/Dragon/Pooling/GameObjectPool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/c4/b0c182ab/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/3b/e0ffdac6/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IPoolStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IPoolable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/PoolGameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Bootstrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/f8/e99c580c/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/CoroutineManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/Dragon_Pooling_GameObjectPoolWrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/DragonEngine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/GameObjectExtenstion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/ILuaModul.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/LuaInjectionUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/3b/e0ffdac6/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/Dragon_Pooling_GameObjectPoolWrap.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -247,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623737777104</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-- 规范化测试用例&#10;-- 新增c#事件绑定类 EventTriggerListeners&#10;-- 新增lua端事件绑定类binders&#10;-- 完成游戏元素对象的编写&#10;-- 移动 primose，class 到游戏核心模块core&#10;-- 修改GameObjectPool的bug，没有绑定到管理类父节点下&#10;-- 新增UnityEngineObjectExtention绑定xlua导出">
+      <created>1623782943348</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623782943348</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +231,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆" />
+    <MESSAGE value="-- 规范化测试用例&#10;-- 新增c#事件绑定类 EventTriggerListeners&#10;-- 新增lua端事件绑定类binders&#10;-- 完成游戏元素对象的编写&#10;-- 移动 primose，class 到游戏核心模块core&#10;-- 修改GameObjectPool的bug，没有绑定到管理类父节点下&#10;-- 新增UnityEngineObjectExtention绑定xlua导出" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- 规范化测试用例&#10;-- 新增c#事件绑定类 EventTriggerListeners&#10;-- 新增lua端事件绑定类binders&#10;-- 完成游戏元素对象的编写&#10;-- 移动 primose，class 到游戏核心模块core&#10;-- 修改GameObjectPool的bug，没有绑定到管理类父节点下&#10;-- 新增UnityEngineObjectExtention绑定xlua导出" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
