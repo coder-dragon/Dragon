@@ -12,4 +12,6 @@ lua_injecttion:Inject(test)
 
 dragon.coroutine.start(test.load_gameobject, test)
 
+local log = dragon.logging.get("element")
+log.debug(11111111111111)
 
