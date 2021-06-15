@@ -33,6 +33,7 @@ namespace Dragon.Editor.LuaExtensions
             #region Dragon
             typeof(LuaInjection),
             typeof(GameObjectPool),
+            typeof(UnityEngineObjectExtention),
             typeof(GameObjectExtenstion)
             #endregion
         };

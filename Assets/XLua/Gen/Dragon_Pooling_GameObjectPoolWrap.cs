@@ -57,11 +57,11 @@ namespace XLua.CSObjectWrap
 				{
 					int _id = LuaAPI.xlua_tointeger(L, 2);
 					UnityEngine.Object _prefab = (UnityEngine.Object)translator.GetObject(L, 3, typeof(UnityEngine.Object));
-					UnityEngine.Transform _root = (UnityEngine.Transform)translator.GetObject(L, 4, typeof(UnityEngine.Transform));
+					UnityEngine.Transform _poolRoot = (UnityEngine.Transform)translator.GetObject(L, 4, typeof(UnityEngine.Transform));
 					int _initialSize = LuaAPI.xlua_tointeger(L, 5);
 					Dragon.Pooling.PoolInflationType _inflationType;translator.Get(L, 6, out _inflationType);
 					
-					var gen_ret = new Dragon.Pooling.GameObjectPool(_id, _prefab, _root, _initialSize, _inflationType);
+					var gen_ret = new Dragon.Pooling.GameObjectPool(_id, _prefab, _poolRoot, _initialSize, _inflationType);
 					translator.Push(L, gen_ret);
                     
 					return 1;
@@ -70,10 +70,10 @@ namespace XLua.CSObjectWrap
 				{
 					int _id = LuaAPI.xlua_tointeger(L, 2);
 					UnityEngine.Object _prefab = (UnityEngine.Object)translator.GetObject(L, 3, typeof(UnityEngine.Object));
-					UnityEngine.Transform _root = (UnityEngine.Transform)translator.GetObject(L, 4, typeof(UnityEngine.Transform));
+					UnityEngine.Transform _poolRoot = (UnityEngine.Transform)translator.GetObject(L, 4, typeof(UnityEngine.Transform));
 					int _initialSize = LuaAPI.xlua_tointeger(L, 5);
 					
-					var gen_ret = new Dragon.Pooling.GameObjectPool(_id, _prefab, _root, _initialSize);
+					var gen_ret = new Dragon.Pooling.GameObjectPool(_id, _prefab, _poolRoot, _initialSize);
 					translator.Push(L, gen_ret);
                     
 					return 1;
@@ -82,9 +82,9 @@ namespace XLua.CSObjectWrap
 				{
 					int _id = LuaAPI.xlua_tointeger(L, 2);
 					UnityEngine.Object _prefab = (UnityEngine.Object)translator.GetObject(L, 3, typeof(UnityEngine.Object));
-					UnityEngine.Transform _root = (UnityEngine.Transform)translator.GetObject(L, 4, typeof(UnityEngine.Transform));
+					UnityEngine.Transform _poolRoot = (UnityEngine.Transform)translator.GetObject(L, 4, typeof(UnityEngine.Transform));
 					
-					var gen_ret = new Dragon.Pooling.GameObjectPool(_id, _prefab, _root);
+					var gen_ret = new Dragon.Pooling.GameObjectPool(_id, _prefab, _poolRoot);
 					translator.Push(L, gen_ret);
                     
 					return 1;

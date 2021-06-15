@@ -90,7 +90,7 @@ namespace Dragon.Pooling
             }
         }
 
-        public GameObjectPool(int id, Object prefab, Transform root, int initialSize = 1, PoolInflationType inflationType = PoolInflationType.Increment)
+        public GameObjectPool(int id, Object prefab, Transform poolRoot, int initialSize = 1, PoolInflationType inflationType = PoolInflationType.Increment)
         {
             Assert.IsNotNull(prefab,"prefab can not be null");
             Id = id;
@@ -99,6 +99,7 @@ namespace Dragon.Pooling
             GameObject go = new GameObject(prefab.name);
             go.SetActive(false);
             Root = go.transform;
+            Root.SetParent(poolRoot);
             populatePool(initialSize);
         }
 

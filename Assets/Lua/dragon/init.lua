@@ -106,6 +106,9 @@ local loaded_module = {}
 
 -- 通过dragon.xxx的索引模块，不用使用传统的require脚本的形式
 local function module_search(t, name)
+    if loaded_module[name] then
+        return loaded_module[name]
+    end
     local ret = def_modules[name]
     local ok, result
     if ret == nil then
@@ -117,7 +120,7 @@ local function module_search(t, name)
     elseif type(ret) == "string" then
         ok, result = pcall(require, name)
     else
-        error(string.format("找不到模块：%s", name))
+        error(string.format("lua module is not found：%s", name))
     end
     if ok then
         loaded_module[name] = ret
@@ -127,7 +130,7 @@ local function module_search(t, name)
         end
         return result
     else
-        error(string.format("加载模块失败：%s  ->  %s", name, result))
+        error(string.format("load lua module failed：%s  ->  %s", name, result))
     end
 end
 
@@ -155,6 +158,8 @@ local function package_exists(name)
 end
 
 return setmetatable({
+    class = require "dragon.core.class",
+    promise = require "dragon.core.promise",
     empty = empty,
     noop = noop,
     is_nil = is_nil,

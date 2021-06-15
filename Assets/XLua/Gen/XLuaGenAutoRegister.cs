@@ -169,11 +169,16 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(Dragon.Pooling.GameObjectPool), DragonPoolingGameObjectPoolWrap.__Register);
         
         
+            translator.DelayWrapLoader(typeof(Dragon.LuaExtensions.UnityEngineObjectExtention), DragonLuaExtensionsUnityEngineObjectExtentionWrap.__Register);
+        
+        
             translator.DelayWrapLoader(typeof(Dragon.GameObjectExtenstion), DragonGameObjectExtenstionWrap.__Register);
         
-        
-        
         }
+        
+        
+        
+        
         
         static void Init(LuaEnv luaenv, ObjectTranslator translator)
         {
