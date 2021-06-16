@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/store/create-throttle.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/collection/dict.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collections/dict.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/collection/dict.lua.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collections/dict.lua.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/collection/queue.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collections/queue.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/collection/queue.lua.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collections/queue.lua.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/store/create-store.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/store/create-store.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
@@ -209,7 +202,7 @@
       <workItem from="1623692563120" duration="296000" />
       <workItem from="1623722825208" duration="8961000" />
       <workItem from="1623733268129" duration="15450000" />
-      <workItem from="1623853449071" duration="14691000" />
+      <workItem from="1623853449071" duration="14817000" />
     </task>
     <task id="LOCAL-00001" summary="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆">
       <created>1623737777104</created>
@@ -225,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623782943348</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-- 实现可订阅/广播、数据重放的数据中心store&#10;-- 规范化注释说明">
+      <created>1623869052455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623869052455</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +262,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆" />
     <MESSAGE value="-- 规范化测试用例&#10;-- 新增c#事件绑定类 EventTriggerListeners&#10;-- 新增lua端事件绑定类binders&#10;-- 完成游戏元素对象的编写&#10;-- 移动 primose，class 到游戏核心模块core&#10;-- 修改GameObjectPool的bug，没有绑定到管理类父节点下&#10;-- 新增UnityEngineObjectExtention绑定xlua导出" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- 规范化测试用例&#10;-- 新增c#事件绑定类 EventTriggerListeners&#10;-- 新增lua端事件绑定类binders&#10;-- 完成游戏元素对象的编写&#10;-- 移动 primose，class 到游戏核心模块core&#10;-- 修改GameObjectPool的bug，没有绑定到管理类父节点下&#10;-- 新增UnityEngineObjectExtention绑定xlua导出" />
+    <MESSAGE value="-- 实现可订阅/广播、数据重放的数据中心store&#10;-- 规范化注释说明" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- 实现可订阅/广播、数据重放的数据中心store&#10;-- 规范化注释说明" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
