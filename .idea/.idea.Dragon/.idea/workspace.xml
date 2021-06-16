@@ -2,42 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collection.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collection/dict.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collection/dict.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collection/queue.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collection/queue.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/store.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/store/create-store.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/store/create-store.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/store/init.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/store/init.lua.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_15_18_46__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_15_18_46__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/store/create-throttle.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/main.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/main.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/ui/examples/demo.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/ui/examples/demo.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/Dragon_LuaExtensions_UnityEngineObjectExtentionWrap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Dragon_LuaExtensions_UnityEngineObjectExtentionWrap.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_BoundsWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_BoundsWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ColorWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ColorWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_GameObjectWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_GameObjectWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_LightWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_LightWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ObjectWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ObjectWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ParticleSystemWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ParticleSystemWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_QuaternionWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_QuaternionWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Ray2DWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Ray2DWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_RayWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_RayWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_RendererWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_RendererWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ResourcesWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_ResourcesWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_SkinnedMeshRendererWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_SkinnedMeshRendererWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_TextAssetWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_TextAssetWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_TimeWrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_TimeWrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector2Wrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector2Wrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector3Wrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector3Wrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector4Wrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_Vector4Wrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/collection/dict.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collections/dict.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/collection/dict.lua.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collections/dict.lua.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/collection/queue.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collections/queue.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/collection/queue.lua.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/collections/queue.lua.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/store/create-store.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/store/create-store.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
@@ -66,35 +41,25 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/Project/Dragon/Assets/Dragon/GameObjectExtenstion.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/Dragon_Pooling_GameObjectPoolWrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/EditorOnly/ProjectPath.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Project/Dragon/Assets/XLua/Gen/UnityEngine_ResourcesWrap.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Project/Dragon/Assets/Dragon/Pooling/GameObjectPool.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Project/Dragon/Assets/Dragon/Editor/LuaExtensions/XLuaExportSetting.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/DragonEngine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/a5/52de1041/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/LuaInjectionUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoadMode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/a8/9d6c236d/Environment.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderCallback.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/CoroutineManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/bc/e306c47b/SystemException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_GameObjectWrap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1245D947-A91B-4A14-B7C7-E2C7335512B2/95/368146cc/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/ILuaModul.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/01/6b289e1d/Exception.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/GameObjectExtenstion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/UnityEngine_GameObjectWrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/LuaInjectionUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderCallback.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoadMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Bootstrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IPoolStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IPoolable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/PoolGameObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Project/Dragon/Assets/Dragon/DragonEngine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Bootstrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/Dragon_Pooling_GameObjectPoolWrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/CoroutineManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/DragonEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/GameObjectExtenstion.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -142,7 +107,10 @@
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/collection/queue.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/store/init.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/store/create-throttle.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/store/create-store.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/collections/dict.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/collections/queue.lua" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tu9pqzgatG2HR6s3lJoFBmZNLS" />
@@ -241,6 +209,7 @@
       <workItem from="1623692563120" duration="296000" />
       <workItem from="1623722825208" duration="8961000" />
       <workItem from="1623733268129" duration="15450000" />
+      <workItem from="1623853449071" duration="14691000" />
     </task>
     <task id="LOCAL-00001" summary="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆">
       <created>1623737777104</created>

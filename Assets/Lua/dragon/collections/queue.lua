@@ -1,12 +1,11 @@
 --[[
     简易队列的实现,不可外部赋值
-    queue = {
-        peek,
-        enqueue,
-        dequeue,
-        to_array,
-        count
-    }
+
+        返回首对象 peek(),
+        进队列    enqueue(arg),
+        出队列    dequeue(),
+        返回数据  to_array(),
+        队列长度  count
 ]]
 
 return function()

@@ -1,12 +1,11 @@
 --[[
     简易字典的实现,不可外部赋值
-    dict = {
-        get,
-        set,
-        clear,
-        pair,
-        count
-    }
+    
+    获取键对应的值 get(k)
+    设置键值      set(k,v)
+    清空容器      clear()
+    返回可迭代对象 pair()
+    获取键值数量   count 
 ]]
 
 return function(kvs)
