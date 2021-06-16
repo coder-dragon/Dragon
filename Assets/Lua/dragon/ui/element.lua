@@ -8,6 +8,7 @@
 local dragon = require "dragon"
 local is_nil = dragon.is_nil
 local binders = require "dragon.ui.binders"
+local weak_mt = {__mode = "k"}
 local log = dragon.logging.get("element")
 
 local UE = CS.UnityEngine
@@ -414,7 +415,7 @@ end
 -- ... 协同方法参数
 function M:start_coroutine(func, ...)
     assert(func, "invalid lua coroutine function")
-    self._coroutine = self._coroutine or setmetatable({}, {__mode = "kv"})
+    self._coroutine = self._coroutine or setmetatable({}, weak_mt)
     local co = self.app.coroutine.start(func, ...)
     if co == nil then
         return nil
