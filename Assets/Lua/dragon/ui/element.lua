@@ -94,7 +94,7 @@ function M:start_load()
     if self.loading or self.loaded then
         return
     end
-    self.app.couroutine.start(self.load, self)
+    self.app.coroutine.start(self.load, self)
 end
 
 -- 卸载元素所需要的游戏对象/配置等资源
@@ -447,7 +447,7 @@ end
 
 -- 当数据仓库触发变更时调用此方法
 function M:on_store_mutation(name, store, state, args)
-    if not self.store.store_watchers then
+    if not self.store_watchers then
         return
     end
     

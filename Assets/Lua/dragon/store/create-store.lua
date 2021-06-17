@@ -39,13 +39,13 @@ local function wrap_emit(store)
         
         for receiver, _ in pairs(map) do
             if not receiver.released then
-                receiver.on_store_mutation(name, store, state, args)
+                receiver:on_store_mutation(name, store, state, args)
             end
         end
         map = get_or_create_map(store, "*")
         for receiver, _ in pairs(map) do
             if not receiver.released then
-                receiver.on_store_mutation(name, store, state, args)
+                receiver:on_store_mutation(name, store, state, args)
             end
         end
     end
