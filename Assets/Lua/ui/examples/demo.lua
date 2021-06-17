@@ -35,4 +35,31 @@ function M:dic_test()
     log.debug("dic.count = "..dic.count)
 end
 
+function M:store_test()
+    local element = require "dragon.ui.element"
+    local e = element.new()
+
+    e.store_watchers =
+    {
+        example =
+        {
+            ["$"] = function(self, store, state, args)
+            end,
+            ["打印事件测试"] = function(self, store, state, args)
+                log.debug("element响应事件")
+            end
+        }
+    }
+
+    e.on_store_mutation = function(name, store, state, args)
+        log.debug("element响应事件")
+    end
+    
+    e.res = "example/loadelement:elementgameobject"
+    e:load()
+    e:set_parent(self.gameobject.transform, false)
+
+    dragon.store.example.print(dragon.store.example.getters.get_msg())
+end
+
 return M

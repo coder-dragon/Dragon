@@ -33,9 +33,10 @@ end
 -- args 参数
 local function wrap_emit(store)
     local subscribers = store.__subscribers
-    return function(name, qrgs)
+    return function(name, args)
         local map = get_or_create_map(store, name)
         local state = store.state
+        
         for receiver, _ in pairs(map) do
             if not receiver.released then
                 receiver.on_store_mutation(name, store, state, args)
@@ -97,13 +98,13 @@ end
 local function wrap_getters(store)
     local state = store.state
     local defs = store.__options.getters
-    if defs then
+    if not defs then
         return
     end
     local getters = {}
     local mt = {__index = function(t, k)
-        local getters = defs[k]
-        if getters then
+        local getter = defs[k]
+        if getter then
             return getter(state, getters)
         end
     end}
@@ -129,7 +130,7 @@ local function wrap_action(store, k, v)
 end
 
 return function(options)
-    assert(name, "store should have a name.")
+    assert(options.name, "store should have a name.")
     local state = type(options.state) == "function" and options.state() or options.state or {}
     local store = {
         name = options.name,
@@ -164,5 +165,5 @@ return function(options)
         local create_throttle = require "dragon.store.create-throttle"
         store.throttle = create_throttle(store)
     end
-    return
+    return store
 end

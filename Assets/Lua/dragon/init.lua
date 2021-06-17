@@ -143,7 +143,7 @@ end
 -- 判断模块是否存在
 local function package_exists(name)
     assert(name)
-    if package.loaded(name) then
+    if package.loaded[name] then
         return true
     end
 

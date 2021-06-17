@@ -1,5 +1,5 @@
 local dragon = require "dragon"
-local create_store = require "blaze.store.create-store"
+local create_store = require "dragon.store.create-store"
 local log = dragon.logging.get("store")
 
 local M = {}
@@ -11,22 +11,22 @@ function M.make_store_searcher(resolve)
         if not dragon.package_exists(path) then
             return
         end
-        local ok, resutl = pcall(function()
+        local ok, result = pcall(function()
             local options = require(path)
             options.name = name
             return create_store(options)
         end)
         if ok then
-            rawset(t, name, resutl)
+            rawset(t, name, result)
             return result
         else
-            log.error(string.format("cteate store '%s' failed:%s", name, result))
+            log.error(string.format("cteate store '%s' failed : %s", name, result))
         end
     end
 end
 
 setmetatable(M, {__index = M.make_store_searcher(function(name)
-    return "store"..name
+    return "store."..name
 end)})
 
 return M

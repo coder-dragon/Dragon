@@ -7,4 +7,5 @@ local gameobject = UE.GameObject.Find("Demo")
 local lua_injecttion = gameobject:GetComponent(typeof(CS.Dragon.LuaExtensions.LuaInjection))
 lua_injecttion:Inject(demo)
 print("注入gameobject对象成功")
-demo:dic_test()
+
+demo:store_test()
