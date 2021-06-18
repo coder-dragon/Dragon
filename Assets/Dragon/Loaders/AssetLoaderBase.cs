@@ -144,7 +144,7 @@ namespace Dragon.Loaders
         /// 增加一个加载完成的回调。
         /// </summary>
         /// <param name="callback">回调</param>
-        public void AddFinishCallback<T>(AssetLoaderFinishCallback<T> callback) where T : AssetLoaderBase
+        public void AddFinishCallback<T>(AssetLoaderCallback<T> callback) where T : AssetLoaderBase
         {
             _finishCallbacks.Add(callback);
         }
@@ -153,7 +153,7 @@ namespace Dragon.Loaders
         /// 增加一个加载完成的回调。
         /// </summary>
         /// <param name="callback">回调</param>
-        public void AddFinishCallback(AssetLoaderFinishCallback callback)
+        public void AddFinishCallback(AssetLoaderCallback callback)
         {
             _finishCallbacks.Add(callback);
         }
@@ -162,7 +162,7 @@ namespace Dragon.Loaders
         /// 移除一个加载完成的回调。
         /// </summary>
         /// <param name="callback">回调</param>
-        public void RemoveFinishCallback<T>(AssetLoaderFinishCallback<T> callback) where T : AssetLoaderBase
+        public void RemoveFinishCallback<T>(AssetLoaderCallback<T> callback) where T : AssetLoaderBase
         {
             _finishCallbacks.Remove(callback);
         }
@@ -171,7 +171,7 @@ namespace Dragon.Loaders
         /// 移除一个加载完成的回调。
         /// </summary>
         /// <param name="callback">回调</param>
-        public void RemoveFinishCallback(AssetLoaderFinishCallback callback)
+        public void RemoveFinishCallback(AssetLoaderCallback callback)
         {
             _finishCallbacks.Remove(callback);
         }

@@ -46,6 +46,12 @@ namespace Dragon.Loaders
 #else
 #endif
         }
+        //TODO:ab包加载逻辑
+        // private IEnumerator loadFromAssetBundle()
+        // {
+        //     _log.Verbose($"开始加载:{Uri}");
+        //     
+        // }
 
 #if UNITY_EDITOR
         private IEnumerator loadFromEdtior()
