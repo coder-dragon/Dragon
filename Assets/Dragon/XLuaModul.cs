@@ -58,7 +58,11 @@ namespace Dragon
         {
             LuaEnv env = new LuaEnv();
             // 根据文件目录的Lua脚本加载器
+            #if UNITY_EDITOR
             env.AddLoader(new FromDirectory(ProjectPath.Get("Assets/Lua")).ReadFile);
+            #else
+            env.AddLoader(new FromDirectory(PathUtility.GetPersistentDataPath("lua")).ReadFile);
+            #endif
             return env;
         }
 
