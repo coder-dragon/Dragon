@@ -30,7 +30,7 @@ local function load(uri, options)
     loader:Start()
     loader_map[uri] = loader
     while not loader.IsDone do
-        coroutine.yield()
+        break
     end
     if loader.IsOk then
         return true, loader.Result, loader

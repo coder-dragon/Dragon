@@ -8,9 +8,7 @@ using UnityEngine;
 namespace Dragon.Loaders
 {
     /// <summary>
-    ///     /// <summary>
     /// 用于加载<see cref="AssetBundle"/>的加载器
-    /// </summary>
     /// </summary>
     public class AssetBundleLoader : AssetLoaderBase
     {
@@ -94,6 +92,7 @@ namespace Dragon.Loaders
                  }
              }
              
+             //AssetBundle模式下优先从PersistentDataPath下加载
              var path = "assetbundles/" + Uri;
              Stream stream = null;
              if (File.Exists(PathUtility.GetPersistentDataPath(path)))
@@ -103,7 +102,23 @@ namespace Dragon.Loaders
                  Finish($"{path} not exists", null);
                  yield break;
              }
-             
+
+             _streamAssetBundleLoader = AssetLoaderPool.Get<StreamAssetBundleLoader>(Uri);
+             _streamAssetBundleLoader.SetStream(stream).SetMode(Mode).FluentStart();
+             while (!_streamAssetBundleLoader.IsDone)
+             {
+                 _createAssetBundleProgress = _streamAssetBundleLoader.Progress * 0.5f + 0.5f;
+                 yield return null;
+             }
+
+             if (!_streamAssetBundleLoader.IsOk)
+             {
+                 Finish(_streamAssetBundleLoader.Error, null);
+             }
+
+             _createAssetBundleProgress = 1f;
+             _log.Verbose($"加载完成：{Uri}");
+             Finish(null, _streamAssetBundleLoader.AssetBundle);
          }
 
          /// <summary>
@@ -188,6 +203,7 @@ namespace Dragon.Loaders
         private float _createAssetBundleProgress;
         private float _dependencyLoadingProgress;
         private List<AssetLoaderBase> _dependencyLoaders;
+        private StreamAssetBundleLoader _streamAssetBundleLoader;
         private Coroutine _runCoroutine;
         private Coroutine _loadDependcyCoroutine;
         private static readonly Log _log = LogManager.GetLogger(typeof(AssetBundleLoader));

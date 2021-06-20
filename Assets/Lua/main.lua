@@ -8,4 +8,4 @@ local lua_injecttion = gameobject:GetComponent(typeof(CS.Dragon.LuaExtensions.Lu
 lua_injecttion:Inject(demo)
 print("注入gameobject对象成功")
 
-demo:store_test()
+demo:dic_test()

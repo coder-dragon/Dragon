@@ -6,7 +6,7 @@ local M = {}
 M.state = function()
     return 
     {
-        msg = "store创建成功拉"
+        msg = "消息"
     }
 end
 

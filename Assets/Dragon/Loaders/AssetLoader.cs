@@ -16,14 +16,24 @@ namespace Dragon.Loaders
         /// 获取需要加载的资源类型
         /// </summary>
         public Type AssetType { get; private set; }
-
+        
+        /// <summary>
+        /// 获取需要加载的AssetBundle包名
+        /// </summary>
         public string AssetBundleName { get; private set; }
 
         /// <summary>
         /// 获取加载进度。
         /// </summary>
-        //public override float Progress { get; private set; }
+        public override float Progress => (_assetLoadingProgress + _assetBundleLoadingProgress) / 2;
 
+        protected override void OnDispose()
+        {
+            if (_assetBundleLoader != null)
+                AssetLoaderPool.Put(_assetBundleLoader);
+            base.OnDispose();
+        }
+        
         protected override void OnStart()
         {
             base.OnStart();
@@ -40,18 +50,64 @@ namespace Dragon.Loaders
             {
                 AssetType = typeof(UnityEngine.Object);
             }
-            
+            //编辑器模式从项目工程中加载，真机从assetbundle中加载
 #if UNITY_EDITOR
             CoroutineManager.StartCoroutine(loadFromEdtior());
 #else
+            loadFromAssetBundle(loadFromAssetBundle();
 #endif
         }
-        //TODO:ab包加载逻辑
-        // private IEnumerator loadFromAssetBundle()
-        // {
-        //     _log.Verbose($"开始加载:{Uri}");
-        //     
-        // }
+
+         private IEnumerator loadFromAssetBundle()
+         {
+             _log.Verbose($"开始加载:{Uri}");
+             _assetBundleLoader = AssetLoaderPool.Get<AssetBundleLoader>(AssetBundleName)
+                 .SetMode(Mode).FluentStart();
+             while (!_assetBundleLoader.IsDone)
+             {
+                 _assetBundleLoadingProgress = _assetBundleLoader.Progress;
+                 yield return null;
+             }
+
+             if (_assetBundleLoader.Error != null)
+             {
+                 Finish(_assetBundleLoader.Error, null);
+                 yield break;
+             }
+
+             if (_assetBundleLoader.AssetBundle == null)
+             {
+                 Finish($"assetbundle not exists {Uri}", null);
+                 yield break;
+             }
+
+             _assetBundleLoadingProgress = 1;
+
+             switch (Mode)
+             {
+                 case AssetLoadMode.Sync:
+                     var asset = _assetBundleLoader.AssetBundle.LoadAsset(AssetName, AssetType);
+                     Finish(null, asset);
+                     break;
+                 case AssetLoadMode.Async:
+                     var request = _assetBundleLoader.AssetBundle.LoadAssetAsync(AssetName, AssetType);
+                     while (!request.isDone)
+                    {
+                        _assetLoadingProgress = request.progress;
+                        yield return null;
+                    }
+                    if (request.asset != null) 
+                    {
+                        Finish($"asset not exists in assetbundle {Uri}", null);
+                        break; 
+                    } 
+                     _assetLoadingProgress = 1f; 
+                     Finish(null, request.asset);
+                     break;
+                 default:
+                     throw new ArgumentException();
+             }
+         }
 
 #if UNITY_EDITOR
         private IEnumerator loadFromEdtior()
@@ -70,7 +126,9 @@ namespace Dragon.Loaders
             Finish($"从编辑器加载资源失败 AssetName = {AssetName} AssetType = {AssetType} AssetBundleName = {AssetBundleName}", null);
         }
 #endif
-
+        private AssetBundleLoader _assetBundleLoader;
+        private float _assetBundleLoadingProgress;
+        private float _assetLoadingProgress;
         private static Log _log = LogManager.GetLogger(typeof(AssetLoader));
     }
 }
