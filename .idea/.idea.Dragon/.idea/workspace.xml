@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="-- AssetBundleLoader.cs的编写&#10;-- Unity自带打包工具">
+    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="-- bug修改">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetBundleManifestRepository.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetBundleManifestRepository.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/res.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/res.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/ui/binders.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/ui/binders.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/LuaInjectionInspector.cs" />
       <option value="$PROJECT_DIR$/Assets/Dragon/Scripts/EditorOnly/ProjectPath.cs" />
       <option value="$PROJECT_DIR$/Assets/Dragon/Scripts/PathUtility.cs" />
       <option value="$PROJECT_DIR$/Assets/Dragon/Scripts/LogManager.cs" />
@@ -86,7 +85,6 @@
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/core/element.lua" />
       <option value="$PROJECT_DIR$/Assets/Dragon/MonoEventListeners/EventTriggerListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Dragon/MonoEventListeners/UIBehaviourEventListener.cs" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/ui/binders.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/ui/examples/test.lua" />
       <option value="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Dragon/LuaExtensions/LuaInjection.cs" />
@@ -107,6 +105,8 @@
       <option value="$PROJECT_DIR$/Assets/Lua/main.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/store/example.lua" />
       <option value="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/res.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/ui/binders.lua" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tu9pqzgatG2HR6s3lJoFBmZNLS" />
@@ -206,7 +206,7 @@
       <workItem from="1623722825208" duration="8961000" />
       <workItem from="1623733268129" duration="15450000" />
       <workItem from="1623853449071" duration="14817000" />
-      <workItem from="1624154200041" duration="13037000" />
+      <workItem from="1624154200041" duration="13162000" />
     </task>
     <task id="LOCAL-00001" summary="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆">
       <created>1623737777104</created>
@@ -236,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624201480249</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-- bug修改">
+      <created>1624201540105</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624201540105</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +282,8 @@
     <MESSAGE value="-- 规范化测试用例&#10;-- 新增c#事件绑定类 EventTriggerListeners&#10;-- 新增lua端事件绑定类binders&#10;-- 完成游戏元素对象的编写&#10;-- 移动 primose，class 到游戏核心模块core&#10;-- 修改GameObjectPool的bug，没有绑定到管理类父节点下&#10;-- 新增UnityEngineObjectExtention绑定xlua导出" />
     <MESSAGE value="-- 实现可订阅/广播、数据重放的数据中心store&#10;-- 规范化注释说明" />
     <MESSAGE value="-- AssetBundleLoader.cs的编写&#10;-- Unity自带打包工具" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- AssetBundleLoader.cs的编写&#10;-- Unity自带打包工具" />
+    <MESSAGE value="-- bug修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- bug修改" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

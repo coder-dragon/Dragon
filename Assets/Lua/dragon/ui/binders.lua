@@ -5,15 +5,6 @@
 local dragon = require "dragon"
 
 local M = {
-    ["obj.text"] = function(obj, state, name)
-        local bind_text = function()
-            obj.text = state[name]
-        end
-        state.__binders[name] = bind_text
-        return function()
-            state.__binders[name] = nil
-        end
-    end,
     ["gameobject.element"] = function(element, ref, child_element)
         child_element:set_gameobject(ref, true)
         return function()
