@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Dragon.Logging;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Object = UnityEngine.Object;
