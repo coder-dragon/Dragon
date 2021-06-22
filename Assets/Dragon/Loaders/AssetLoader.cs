@@ -54,7 +54,7 @@ namespace Dragon.Loaders
 #if UNITY_EDITOR
             CoroutineManager.StartCoroutine(loadFromEdtior());
 #else
-            loadFromAssetBundle(loadFromAssetBundle());
+            CoroutineManager.StartCoroutine(loadFromAssetBundle());
 #endif
         }
 

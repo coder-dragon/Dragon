@@ -10,16 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Default Local Group
+  m_Name: example-loadgameobject-gameobject.b
   m_EditorClassIdentifier: 
-  m_GroupName: Default Local Group
+  m_GroupName: example-loadgameobject-gameobject.b
   m_Data:
     m_SerializedData: []
-  m_GUID: 46c7566993f65924aa5eff4134537b12
-  m_SerializeEntries: []
+  m_GUID: 0acd74a6bfb54444fbfd33bbf7eac9b8
+  m_SerializeEntries:
+  - m_GUID: 854a1a5ca40e4cb49a4e7c2f4f3203c7
+    m_Address: Assets/Rescources(AssetBundle)/Example/LoadGameObject/GameObject.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 1fef70abaae500046817c69aabfeeebb, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 166d79cf4e8538b45ae55f74e4013c3c, type: 2}
-    - {fileID: 11400000, guid: 86d3cb69ac467224b9fb226531b4419d, type: 2}
+    - {fileID: 11400000, guid: a92ec7cfe0dcc8d4e9e29855a17c0e1a, type: 2}
+    - {fileID: 11400000, guid: 44aa4671b27543244a262f900d5b159a, type: 2}

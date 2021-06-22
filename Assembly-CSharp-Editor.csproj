@@ -47,12 +47,11 @@
      <Compile Include="Assets\Dragon\Editor\LuaExtensions\LuaInjectionUtility.cs" />
      <Compile Include="Assets\Dragon\Editor\DragonEditorMenu.cs" />
      <Compile Include="Assets\XLua\Editor\ExampleConfig.cs" />
+     <Compile Include="Assets\Samples\Addressables.CN\1.18.0\Disable AssetImport on Build\Editor\DisableAssetImportOnBuild.cs" />
      <Compile Include="Assets\XLua\Src\Editor\Hotfix.cs" />
      <Compile Include="Assets\XLua\Src\Editor\Generator.cs" />
      <Compile Include="Assets\Dragon\Editor\LuaExtensions\LuaInjectionInspector.cs" />
      <Compile Include="Assets\XLua\Src\Editor\LuaImporter.cs" />
-     <Compile Include="Assets\XLua\Examples\13_BuildFromCLI\Editor\BuildFromCLI.cs" />
-     <Compile Include="Assets\Samples\Addressables.CN\1.18.0\Disable AssetImport on Build\Editor\DisableAssetImportOnBuild.cs" />
      <None Include="Assets\XLua\Src\Editor\Template\LuaInterfaceBridge.tpl.txt" />
      <None Include="Assets\XLua\Src\Editor\Template\LuaWrapPusher.tpl.txt" />
      <None Include="Assets\XLua\Src\Editor\Template\LuaDelegateWrap.tpl.txt" />
@@ -687,6 +686,12 @@
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="UnityEditor.CacheServer">
+     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Addressables">
+     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
@@ -702,11 +707,20 @@
      <Reference Include="Unity.TextMeshPro">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.ScriptableBuildPipeline">
+     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Addressables.Editor">
+     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ResourceManager">
+     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
@@ -714,23 +728,8 @@
      <Reference Include="UnityEngine.UI">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Addressables">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Addressables.Editor">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.CacheServer">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ResourceManager">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ScriptableBuildPipeline">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ScriptableBuildPipeline.Editor">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
