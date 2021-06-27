@@ -2,7 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Dragon/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/_g.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/stack.lua.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/init.lua.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/router.lua.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/routes-template.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/async.lua.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/location.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/params.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/path.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/query.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSettings/Search.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_17_9_43_[Default_Changelist]/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_17_9_43_[Default_Changelist]/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_17_9_43_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_17_9_43__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_18_17_57_[Default_Changelist]/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_18_17_57_[Default_Changelist]/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_18_17_57_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_18_17_57__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_19_23_02_[Default_Changelist]/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_19_23_02_[Default_Changelist]/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_19_23_02_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_19_23_02__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,21 +70,22 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/EditorOnly/ProjectPath.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/ILuaModul.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontFeaturesCommon.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/Dragon_Pooling_GameObjectPoolWrap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Project/Unity-Project/Dragon/Assets/Dragon/Pooling/GameObjectPool.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/LuaInjectionUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BDF294DD-C04D-432B-BBAA-BC0D9641F286/29/26706050/ISubmitHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderCallback.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/92/bb3af6e9/ISerializationCallbackReceiver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/ae/bb0d46e2/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoadMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/2b/e13cc0dd/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.5/Editor/Utilities/TypeUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Project/Unity-Project/Dragon/Assets/Dragon/Pooling/GameObjectPool.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BDF294DD-C04D-432B-BBAA-BC0D9641F286/3b/b19e661c/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/d9/1b42b548/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IPoolStrategy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IPoolable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,23 +94,22 @@
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/CoroutineManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/DragonEngine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/GameObjectExtenstion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8DF8F2F-772E-4D15-8A06-FE517F55B026/f0/d1c12232/ICanvasRaycastFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/ILuaModul.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontFeaturesCommon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/Dragon_Pooling_GameObjectPoolWrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8DF8F2F-772E-4D15-8A06-FE517F55B026/2a/ae3702f8/CanvasRenderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/LuaInjectionUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/3b/e0ffdac6/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BDF294DD-C04D-432B-BBAA-BC0D9641F286/84/d643a9e4/IEventSystemHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8DF8F2F-772E-4D15-8A06-FE517F55B026/59/70b76dec/RectTransformUtility.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Dragon/Pooling/PoolGameObject.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Pooling/IPoolStrategy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Pooling/ObjectPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Editor/ProjectPath.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Pooling/DefaultPoolStrategy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Pooling/PoolStategy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/PathUtility.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/XLuaModul.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/LuaExtensions/FileLoaders/FromDirectory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/EditorOnly/ProjectPath.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Logging/GameObjectPoolManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Pooling/GameObjectPoolManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/DragonEngine.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Editor/DragonEditorMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Dragon/GameObjectExtenstion.cs" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/logging/loglevel.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/logging/init.lua" />
@@ -86,13 +127,11 @@
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/store/init.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/store/create-throttle.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/store/create-store.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/collections/dict.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/collections/queue.lua" />
       <option value="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetBundleLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Dragon/Loaders/StreamAssetBundleLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Lua/ui/examples/demo.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/main.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/store/example.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/res.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/ui/binders.lua" />
@@ -105,7 +144,23 @@
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/stack.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/array.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/store/create-store.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/main.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/func.lua" />
+      <option value="$PROJECT_DIR$/Assets/button.cs" />
+      <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/ButtonTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/SpriteClick.cs" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/routes-template.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/router.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/query.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/params.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/path.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/_G.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/location.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/_g.lua" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tu9pqzgatG2HR6s3lJoFBmZNLS" />
@@ -113,6 +168,8 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -127,10 +184,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Lua" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Lua Application.main.lua">
+  <component name="RunManager" selected="Lua Application.func.lua">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -149,6 +206,16 @@
       <option name="selectedOptions">
         <list />
       </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="func.lua" type="lua.app" factoryName="Lua Application" singleton="false">
+      <option name="program" value="lua.exe" />
+      <option name="file" value="$PROJECT_DIR$/Assets/Lua/dragon/func.lua" />
+      <option name="workingDir" value="" />
+      <option name="debuggerType" value="2" />
+      <option name="params" value="" />
+      <option name="charset" value="UTF-8" />
+      <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
     <configuration name="main.lua" type="lua.app" factoryName="Lua Application" temporary="true">
@@ -174,10 +241,12 @@
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
       <item itemvalue="Emmy Debugger(NEW).EmmyLua" />
+      <item itemvalue="Lua Application.func.lua" />
       <item itemvalue="Lua Application.main.lua" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Lua Application.func.lua" />
         <item itemvalue="Lua Application.main.lua" />
       </list>
     </recent_temporary>
@@ -209,6 +278,12 @@
       <workItem from="1624275506600" duration="4116000" />
       <workItem from="1624363098749" duration="9189000" />
       <workItem from="1624453251634" duration="9299000" />
+      <workItem from="1624465136435" duration="319000" />
+      <workItem from="1624535740359" duration="7826000" />
+      <workItem from="1624621031314" duration="2543000" />
+      <workItem from="1624685328142" duration="517000" />
+      <workItem from="1624689000906" duration="6493000" />
+      <workItem from="1624780332480" duration="27199000" />
     </task>
     <task id="LOCAL-00001" summary="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆">
       <created>1623737777104</created>
@@ -266,7 +341,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624464431912</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="-- 同步版本文件">
+      <created>1624465266562</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1624465266562</updated>
+    </task>
+    <task id="LOCAL-00010" summary="-- 柯里化函数的实现">
+      <created>1624621166636</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1624621166636</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +374,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -308,7 +397,9 @@
     <MESSAGE value="-- bug修改" />
     <MESSAGE value="-- lua vue router 一些基本工具类的实现" />
     <MESSAGE value="-- addressables插件&#10;-- lua vue router 的定义" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- addressables插件&#10;-- lua vue router 的定义" />
+    <MESSAGE value="-- 同步版本文件" />
+    <MESSAGE value="-- 柯里化函数的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- 柯里化函数的实现" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

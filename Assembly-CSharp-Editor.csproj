@@ -710,6 +710,9 @@
      <Reference Include="Unity.ScriptableBuildPipeline">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.2D.Sprite.Editor">
+     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Addressables.Editor">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
      </Reference>
