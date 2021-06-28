@@ -4,8 +4,9 @@
 
 local dragon = require "dragon"
 
--- 一个空的界面实例定义
 local empty_activity
+
+--- 一个空的界面实例定义
 local empty = function()
     if not empty_activity then
         empty_activity = dragon.ui.element()
@@ -28,6 +29,7 @@ local M = {
     routes = {
         path = "/main-path/child-path?param1=value", -- 路由路径: "/{主路由}/{子路由}?{参数1}=value"
         name = "blank", -- 命名路由
+        alias = "alias", -- 命名别名
         redirect = "redirect" or function(to, from, next)  end, -- 路由重定向路径or重定向方法
         before_enter = function(to, from, next)  end, -- 路由 before_enter 守卫
         compoents = { -- 路由子组件定义，对应每个界面实例

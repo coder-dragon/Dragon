@@ -1,3 +1,7 @@
+--[[
+    路由请求参数解析
+]]
+
 local dragon = require "dragon"
 local array = dragon.array
 local log = dragon.logging.get("query")

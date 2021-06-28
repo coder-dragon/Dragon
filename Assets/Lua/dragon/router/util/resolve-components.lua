@@ -1,3 +1,7 @@
+--[[
+    component操作
+]]
+
 local dragon = require "dragon"
 local log = dragon.logging.get("router")
 local array = dragon.array
@@ -6,7 +10,8 @@ local is_promise = promise.is_promise
 
 local M = {}
 
--- 返回一个只会调用此函数一次的闭包
+--- 返回一个只会调用此函数一次的闭包
+--- @param fn function 需要被执行的方法
 local function once(fn)
     local called = false
     return function(self, ...)
@@ -18,7 +23,8 @@ local function once(fn)
     end
 end
 
--- 将一个二维table分解成一维table
+--- 将一个二维table分解成一维table
+--- @param arr table 二维table表
 local function flatten(arr)
     local ret = {}
     for _, sub_arr in ipairs(arr) do
@@ -29,7 +35,10 @@ local function flatten(arr)
     return ret
 end
 
--- 操作二维table中的所有组件，并把结果映射到一维table中
+--- 平铺路由表中的组件
+--- @param matched table 匹配的路由节点
+--- @param fn function 用于操作component的方法
+--- @return table 操作component的方法组
 local function flat_map_components(matched, fn)
     return flatten(array.map(matched, function(m)
         local ret = {}
@@ -40,8 +49,10 @@ local function flat_map_components(matched, fn)
     end))
 end
 
--- 处理匹配路由的组件，并把组件的返回结果用promise包装调用
-local function resolve_async_compnents(matched)
+--- 处理匹配路由的组件，并把组件的返回结果用promise包装后顺序调用
+--- @param matched table 匹配的路由节点
+--- @return function 用于生成component实例的方法
+local function resolve_async_components(matched)
     return function(to, from, next)
         local has_async = false
         local pending = 0

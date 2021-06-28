@@ -1,49 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Dragon/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/_g.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/stack.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/init.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/router.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/routes-template.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/async.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/location.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/params.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/path.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/query.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSettings/Search.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_17_9_43_[Default_Changelist]/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_17_9_43_[Default_Changelist]/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_17_9_43_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_17_9_43__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_18_17_57_[Default_Changelist]/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_18_17_57_[Default_Changelist]/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_18_17_57_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_18_17_57__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_19_23_02_[Default_Changelist]/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_19_23_02_[Default_Changelist]/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_19_23_02_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/shelf/Uncommitted_changes_before_Update_at_2021_6_19_23_02__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="-- vue 路由路径解析&#10;-- unity 2d demo场景&#10;-- 可控制全局变量声明的管理器">
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/create-matcher.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/remove-route-map.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/route.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/routes-template.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/example/routes-template.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/location.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/location.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/query.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/query.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,11 +79,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Dragon/GameObjectExtenstion.cs" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/logging/loglevel.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/logging/init.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/logging/unityconsole.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/core/element.lua" />
       <option value="$PROJECT_DIR$/Assets/Dragon/MonoEventListeners/EventTriggerListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Dragon/MonoEventListeners/UIBehaviourEventListener.cs" />
       <option value="$PROJECT_DIR$/Assets/Lua/ui/examples/test.lua" />
@@ -143,24 +107,29 @@
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/aaa.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/stack.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/array.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/store/create-store.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/main.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/func.lua" />
       <option value="$PROJECT_DIR$/Assets/button.cs" />
       <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/ButtonTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/SpriteClick.cs" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/routes-template.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/router.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/query.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/params.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/path.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/_G.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/location.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/_g.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/query.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/location.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/routes-template.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/example.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/example/routes-template.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/remove-route-map.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/route.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/create-matcher.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tu9pqzgatG2HR6s3lJoFBmZNLS" />
@@ -184,7 +153,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Lua" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Lua Application.func.lua">
@@ -283,7 +252,8 @@
       <workItem from="1624621031314" duration="2543000" />
       <workItem from="1624685328142" duration="517000" />
       <workItem from="1624689000906" duration="6493000" />
-      <workItem from="1624780332480" duration="27199000" />
+      <workItem from="1624780332480" duration="27568000" />
+      <workItem from="1624880057313" duration="22501000" />
     </task>
     <task id="LOCAL-00001" summary="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆">
       <created>1623737777104</created>
@@ -355,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624621166636</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="-- vue 路由路径解析&#10;-- unity 2d demo场景&#10;-- 可控制全局变量声明的管理器">
+      <created>1624821307798</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1624821307798</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +376,8 @@
     <MESSAGE value="-- addressables插件&#10;-- lua vue router 的定义" />
     <MESSAGE value="-- 同步版本文件" />
     <MESSAGE value="-- 柯里化函数的实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- 柯里化函数的实现" />
+    <MESSAGE value="-- vue 路由路径解析&#10;-- unity 2d demo场景&#10;-- 可控制全局变量声明的管理器" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- vue 路由路径解析&#10;-- unity 2d demo场景&#10;-- 可控制全局变量声明的管理器" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
