@@ -36,7 +36,7 @@ local function flatten(arr)
 end
 
 --- 平铺路由表中的组件
---- @param matched table 匹配的路由节点
+--- @param matched table 匹配的路由记录
 --- @param fn function 用于操作component的方法
 --- @return table 操作component的方法组
 local function flat_map_components(matched, fn)
@@ -50,7 +50,7 @@ local function flat_map_components(matched, fn)
 end
 
 --- 处理匹配路由的组件，并把组件的返回结果用promise包装后顺序调用
---- @param matched table 匹配的路由节点
+--- @param matched table 匹配的路由记录
 --- @return function 用于生成component实例的方法
 local function resolve_async_components(matched)
     return function(to, from, next)

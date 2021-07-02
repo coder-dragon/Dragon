@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="-- vue 路由路径解析&#10;-- unity 2d demo场景&#10;-- 可控制全局变量声明的管理器">
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/create-matcher.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/remove-route-map.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/route.lua" afterDir="false" />
+    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/view.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Lua/dragon/ui/activity.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/create-matcher.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/create-matcher.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/routes-template.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/example/routes-template.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/location.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/location.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/query.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/query.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/init.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/init.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/router.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/router.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,16 +70,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8DF8F2F-772E-4D15-8A06-FE517F55B026/2a/ae3702f8/CanvasRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/LuaInjectionUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables.cn@1.18.0/Tests/Runtime/SyncAddressableTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/3b/e0ffdac6/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BDF294DD-C04D-432B-BBAA-BC0D9641F286/84/d643a9e4/IEventSystemHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables.cn@1.18.0/Runtime/ResourceManager/ResourceProviders/TextDataProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8DF8F2F-772E-4D15-8A06-FE517F55B026/59/70b76dec/RectTransformUtility.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Dragon/MonoEventListeners/EventTriggerListener.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/MonoEventListeners/UIBehaviourEventListener.cs" />
-      <option value="$PROJECT_DIR$/Assets/Lua/ui/examples/test.lua" />
       <option value="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Dragon/LuaExtensions/LuaInjection.cs" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/init.lua" />
@@ -103,7 +100,6 @@
       <option value="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/object.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/async.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/init.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/aaa.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/stack.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/array.lua" />
@@ -113,7 +109,6 @@
       <option value="$PROJECT_DIR$/Assets/button.cs" />
       <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/ButtonTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/SpriteClick.cs" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/router.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/params.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/path.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/_G.lua" />
@@ -123,13 +118,18 @@
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/routes-template.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/example.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/example/routes-template.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/remove-route-map.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/route.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/create-matcher.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/core/promise.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/router.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/create-matcher.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/view.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/init.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/ui/activity.lua" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tu9pqzgatG2HR6s3lJoFBmZNLS" />
@@ -153,7 +153,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="FileHeaderTextPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Lua Application.func.lua">
@@ -254,6 +254,11 @@
       <workItem from="1624689000906" duration="6493000" />
       <workItem from="1624780332480" duration="27568000" />
       <workItem from="1624880057313" duration="22501000" />
+      <workItem from="1624966707940" duration="11950000" />
+      <workItem from="1625146284395" duration="2432000" />
+      <workItem from="1625152359193" duration="245000" />
+      <workItem from="1625152633972" duration="785000" />
+      <workItem from="1625241925081" duration="14052000" />
     </task>
     <task id="LOCAL-00001" summary="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆">
       <created>1623737777104</created>

@@ -1,5 +1,5 @@
 --[[
-    
+    基础对象，用于导航路由，执行路由守卫，以及生成一个新的route对象
 ]]
 
 local dragon = require "dragon"
@@ -22,6 +22,10 @@ local START = require("dragon.router.route").START
 local M = {}
 M.__index = M
 
+--- 将匹配到的路由记录分类
+--- @param current table 当前的路记录
+--- @param next table 导航的路由记录
+--- @return table 经过分类的路由记录 更新，激活，失活
 local function resolve_queue(current, next)
     local i = 1
     local max = math.max(#current, #next)
@@ -55,7 +59,7 @@ end
 --- @param match table 匹配的路由记录
 --- @param key string component组件名
 --- @param cbs table 回调方法列表
---- @param is_valid boolean TODO: 参数未知
+--- @param is_valid boolean 当前路由是否合法
 local function bind_enter_guard(guard, match, key, cbs, is_valid)
     return function(to, from, next)
         return guard(to, from, function(cb)
@@ -117,6 +121,11 @@ local function extract_enter_guards(activated, cbs, is_valid)
     end)
 end
 
+--- poll方法，当vm实例被创建以后则调用callback
+--- @param cb function 路由守卫的回调函数
+--- @param instances table 路由vm实例
+--- @param key string 路由组件名
+--- @param is_valid function 是否有效
 local function poll(cb, instances, key, is_valid)
     if instances[key] and not instances[key]._is_being_destroyed then
         cb(instances[key])
@@ -127,6 +136,7 @@ local function poll(cb, instances, key, is_valid)
     end
 end
 
+--- 构造函数
 function M.new(router, base)
     local self = {
         router = router,
@@ -142,10 +152,15 @@ function M.new(router, base)
     return self
 end
 
+--- 监听回调
+--- @param cb function 回调函数
 function M:listen(cb)
     self.cb = cb
 end
 
+--- 路由激活后的回调
+--- @param cb function 成功回调函数
+--- @param error_cb function 错误回调函数
 function M:on_ready(cb, error_cb)
     if self.ready then
         cb()
@@ -157,10 +172,16 @@ function M:on_ready(cb, error_cb)
     end
 end
 
+--- 插入错误回调
+--- @param error_cb function 错误回调函数
 function M:on_error(error_cb)
     table.insert(self.error_cbs, error_cb)
 end
 
+--- 导航路由
+--- @param location table 路由导航定位
+--- @param on_complete function 导航完成回调
+--- @param on_abort function 导航中止回调
 function M:transition_to(location, on_complete, on_abort)
     local route = self.router:match(location, self.current)
     self:confirm_transition(route, function()
@@ -187,8 +208,13 @@ function M:transition_to(location, on_complete, on_abort)
     end)
 end
 
+--- 确认路由导航
+--- @param route table 当前路由对象
+--- @param on_complete function 导航完成回调
+--- @param on_abort function 导航中止回调
 function M:confirm_transition(route, on_complete, on_abort)
     local current = self.current
+    --- 路由终止回调
     local abort = function(err)
         if err then
             if #self.error_cbs > 0 then
@@ -201,17 +227,20 @@ function M:confirm_transition(route, on_complete, on_abort)
         end
         if on_abort then on_abort(err) end
     end
-
+    
+    --- 是当前路由则终止路由
     if route:equals(current) and #route.matched == #current.matched then
         self:ensure_url()
         return abort()
     end
-
+    
+    --- 遍历整理出所有的comonent 更新，失活，激活
     local resolved = resolve_queue(self.current.matched, route.matched)
     local updated = resolved.updated
     local deactivated = resolved.deactivated
     local activated = resolved.activated
 
+    --- 提取所有component上的函数钩子
     local queue = array.concat(
             extract_leave_guards(deactivated),
             self.router.before_hooks,
@@ -219,6 +248,8 @@ function M:confirm_transition(route, on_complete, on_abort)
             array.map(activated, function(m) return m.before_enter end)
     )
     queue[#queue+1] = resolve_async_components(activated)
+    
+    --- 用于依次执行hook函数的迭代器，参考dragon.router.util.async
     self.pending = route
     local iterator = function(hook, next)
         if self.pending ~= route then
@@ -255,6 +286,7 @@ function M:confirm_transition(route, on_complete, on_abort)
         local post_enter_cbs = {}
         local is_valid = function() return self.current == route end
         local enter_guards = extract_enter_guards(activated, post_enter_cbs, is_valid)
+        --- 注入
         local queue = array.concat(enter_guards, self.router.resolve_hooks)
         run_queue(queue, iterator, function()
             if self.pending ~= route then
@@ -262,18 +294,21 @@ function M:confirm_transition(route, on_complete, on_abort)
             end
             self.pending = nil
             on_complete(route)
-            if self.router.app then
-                self.router.app.coroutine.start(function()
-                    coroutine.yield()
-                    for _,cb in ipairs(post_enter_cbs) do
-                        cb()
-                    end
-                end)
-            end
+            dragon.coroutine.start(function()
+                coroutine.yield()
+                for _,cb in ipairs(post_enter_cbs) do
+                    --- 此回调函数为执行poll函数，
+                    ---每帧轮询，直到view被生成后
+                    ---给 before_router_enter钩子函数的的回调传入view实例
+                    cb()
+                end
+            end)
         end)
     end)
 end
 
+--- 更新路由 在确认路由的回调中调用
+--- @param route table 路由对象
 function M:update_route(route)
     local prev = self.current
     self.current = route

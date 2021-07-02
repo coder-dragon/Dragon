@@ -1,5 +1,5 @@
 --[[
-    路由堆栈操作对象
+    抽象对象，用于导航路由，以及维护route的堆栈
 ]]
 local dragon = require "dragon"
 local array = dragon.array
