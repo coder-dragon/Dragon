@@ -16,7 +16,7 @@ namespace Dragon
         /// </summary>
         public static Bootstrap Instance { get; private set; }
 
-        public virtual ILuaModul LuaModul
+        public virtual ILuaModul LuaModule
         {
             get
             {
@@ -64,7 +64,7 @@ namespace Dragon
         {
             try
             {
-                LuaModul.Initialize();
+                LuaModule.Initialize();
             }
             catch (Exception e)
             {

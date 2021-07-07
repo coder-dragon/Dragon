@@ -102,12 +102,12 @@ local function invoke(func, ...)
 end
 
 local def_modules = {}
-local loaded_module = {}
+local loaded_modules = {}
 
 -- 通过dragon.xxx的索引模块，不用使用传统的require脚本的形式
 local function module_search(t, name)
-    if loaded_module[name] then
-        return loaded_module[name]
+    if loaded_modules[name] then
+        return loaded_modules[name]
     end
     local ret = def_modules[name]
     local ok, result
@@ -123,7 +123,7 @@ local function module_search(t, name)
         error(string.format("lua module is not found：%s", name))
     end
     if ok then
-        loaded_module[name] = ret
+        loaded_modules[name] = ret
         rawset(t, name, result)
         if result.init then
             result.init(t)
@@ -157,6 +157,38 @@ local function package_exists(name)
     return false
 end
 
+--- 释放所有资源和模块
+local function unload(manual_dispose)
+    local event = loaded_modules["event"]
+    --- 抛全局的unload事件
+    if event then
+        event.emit("blaze.unload")
+    end
+    --- 释放所有模块
+    for name, module in pairs(loaded_modules) do
+        if type(module.release) == "function" then
+            local ok, result = pcall(module.release)
+            if not ok then
+                print(string.format("[blaze]释放模块失败：%s %s", name, result))
+            end
+        end
+    end
+    --- 清除所有资源
+    CS.Dragon.Loaders.AssetBundleLoader.ManifestRepository:Invalidate()
+    CS.Dragon.Loaders.AssetLoaderPool.UnloadAll()
+
+    --- 清除所有实例化对象
+    local GameObjectPoolManager = CS.Dragon.Pooling.GameObjectPoolManager
+    GameObjectPoolManager.Instance:ClearAll()
+    CS.UnityEngine.Resources.UnloadUnusedAssets()
+    
+    require("dragon.coroutine").stop_all()
+    
+    if not manual_dispose then
+        CS.Dragon.Bootstrap.Instance.LuaModule:Unload()
+    end
+end
+
 return setmetatable({
     class = require "dragon.core.class",
     promise = require "dragon.core.promise",
@@ -166,6 +198,7 @@ return setmetatable({
     invoke = invoke,
     dump = dump,
     use = use,
+    unload = unload,
     module_search = module_search,
     package_exists = package_exists
 }, {__index = module_search})

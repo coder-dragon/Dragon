@@ -52,6 +52,7 @@
      <Compile Include="Assets\XLua\Src\Editor\Generator.cs" />
      <Compile Include="Assets\Dragon\Editor\LuaExtensions\LuaInjectionInspector.cs" />
      <Compile Include="Assets\XLua\Src\Editor\LuaImporter.cs" />
+     <Compile Include="Assets\XLua\Examples\13_BuildFromCLI\Editor\BuildFromCLI.cs" />
      <None Include="Assets\XLua\Src\Editor\Template\LuaInterfaceBridge.tpl.txt" />
      <None Include="Assets\XLua\Src\Editor\Template\LuaWrapPusher.tpl.txt" />
      <None Include="Assets\XLua\Src\Editor\Template\LuaDelegateWrap.tpl.txt" />

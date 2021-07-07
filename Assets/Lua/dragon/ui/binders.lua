@@ -219,6 +219,20 @@ local M = {
         return function()
             element.app.event.off(event_name, handler)
         end
+    end,
+    ["component.text"] = function(ref, store, event_name, )
+        local handler = function(value)
+            ref.text = value
+        end
+        store.__subscribers[event_name]
+        store.bind_state(state, field)    
+        
+        return function()
+            state.bind[field] = nil
+            if #state.bind == 0 then
+                state.bind = nil
+            end
+        end
     end
 }
 

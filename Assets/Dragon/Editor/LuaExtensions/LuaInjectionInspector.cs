@@ -5,6 +5,8 @@ using System.Linq;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace Dragon.Editor.LuaExtensions
 {
@@ -27,6 +29,8 @@ namespace Dragon.Editor.LuaExtensions
 
             GUILayout.BeginHorizontal();
             drawDropZone();
+            drawAutoCollectionButton();
+            drawCloseRaycastTargetButton();
             drawLockButton();
             GUILayout.EndHorizontal();
             _reorderableList?.DoLayoutList();
@@ -323,16 +327,101 @@ namespace Dragon.Editor.LuaExtensions
         }
 
         private void drawLockButton()
-        {       
+        {
             float RECT_HEIGHT = 50.0f;
-            var content = new GUIContent("添加引擎对象");
-            Rect rect = GUILayoutUtility.GetRect(content, GUI.skin.box, GUILayout.ExpandWidth(false), GUILayout.Height(RECT_HEIGHT));
-            if(GUI.Button(rect, "锁定/解锁"))
+            var content = new GUIContent("锁定\n面板");
+            Rect rect = GUILayoutUtility.GetRect(content, GUI.skin.box, GUILayout.ExpandWidth(false), GUILayout.Height(RECT_HEIGHT), GUILayout.Width(RECT_HEIGHT));
+            var isLocked = ActiveEditorTracker.sharedTracker.isLocked;
+            if(isLocked)
             {
-                ActiveEditorTracker.sharedTracker.isLocked = !ActiveEditorTracker.sharedTracker.isLocked;
-                ActiveEditorTracker.sharedTracker.ForceRebuild();
+                if (GUI.Button(rect, "解锁\n面板"))
+                {
+                    ActiveEditorTracker.sharedTracker.isLocked = !ActiveEditorTracker.sharedTracker.isLocked;
+                    ActiveEditorTracker.sharedTracker.ForceRebuild();
+                }
+            }
+            else
+            {
+                if (GUI.Button(rect, "锁定\n面板"))
+                {
+                    ActiveEditorTracker.sharedTracker.isLocked = !ActiveEditorTracker.sharedTracker.isLocked;
+                    ActiveEditorTracker.sharedTracker.ForceRebuild();
+                }
             }
         }
+
+        private delegate void Operate(GameObject go);
+
+        private void recurveGameObject(GameObject obj, Operate operate)
+        {
+            operate(obj);
+            for (int i = 0; i < obj.transform.childCount; i++)
+                recurveGameObject(obj.transform.GetChild(i).gameObject, operate);
+        }
+
+
+        private void collectChildReference(GameObject obj)
+        {
+            var inference = LuaInjectionUtility.ComponentTypeInference(obj);
+            var Fields = _luaInjection.Fields;
+            if (inference != null)
+            {
+                foreach (var luaFieldPair in Fields)
+                {
+                    if(luaFieldPair.K == obj.name)
+                        return;
+                }
+                Undo.RecordObject(target, "LuaInjection,AddItem");
+                Fields.Add(new LuaFieldPair
+                {
+                    K = obj.name,
+                    T = LuaFieldType.Component,
+                    V = inference
+                });
+            }
+        }
+
+        private void drawAutoCollectionButton()
+        {
+            float RECT_HEIGHT = 50.0f;
+            var content = new GUIContent("收集组件");
+            Rect rect = GUILayoutUtility.GetRect(content, GUI.skin.box, GUILayout.ExpandWidth(false), GUILayout.Height(RECT_HEIGHT), GUILayout.Width(RECT_HEIGHT));
+            if (GUI.Button(rect, "收集\n组件"))
+            {
+                recurveGameObject(_luaInjection.gameObject, collectChildReference);
+                EditorUtility.SetDirty(target);
+            }
+        }
+
+        private void optimizeComponent(GameObject obj)
+        {
+            //优化事件检测
+            var components = obj.GetComponents<IEventSystemHandler>();
+            var graphics = obj.GetComponents<Graphic>();
+            foreach (var graphic in graphics)
+                graphic.raycastTarget = components.Length > 0;
+
+            //优化模板
+            var mask = obj.GetComponentInParent<Mask>();
+            var mask2d = obj.GetComponentInParent<RectMask2D>();
+            var maskable = mask != null || mask2d != null;
+            var maskableGraphics = obj.GetComponents<MaskableGraphic>();
+            foreach (var maskableGraphic in maskableGraphics)
+                maskableGraphic.maskable = maskable;
+        }
+
+        private void drawCloseRaycastTargetButton()
+        {
+            float RECT_HEIGHT = 50.0f;
+            var content = new GUIContent("优化界面","优化项目包括：\n关闭无用RaycasTarget\n关闭无用模板测试");
+            Rect rect = GUILayoutUtility.GetRect(content, GUI.skin.box, GUILayout.ExpandWidth(false), GUILayout.Height(RECT_HEIGHT), GUILayout.Width(RECT_HEIGHT));
+            if (GUI.Button(rect, "优化\n界面"))
+            {
+                recurveGameObject(_luaInjection.gameObject, optimizeComponent);
+                EditorUtility.SetDirty(target);
+            }
+        }
+
 
         private LuaInjection _luaInjection;
         private ReorderableList _reorderableList;

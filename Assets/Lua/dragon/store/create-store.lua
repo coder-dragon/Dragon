@@ -129,6 +129,25 @@ local function wrap_action(store, k, v)
     end
 end
 
+local function wrap_bind_state(store)
+    return function(field, field_name, handler)
+        local strs = dragon.string.split(field_name, ".")
+        local current = field
+        for _, v in ipairs(strs) do
+            if type(current[v]) == "table" then
+                current = current[v]
+            else
+                error("attempt to bind a field that does not exist")
+            end
+        end
+        store.state_binders = store.state_binders or {}
+        store.state_binders[field_name] = function(value)
+            current[strs[#strs]] = value
+            handler()
+        end
+    end
+end
+
 return function(options)
     assert(options.name, "store should have a name.")
     local state = type(options.state) == "function" and options.state() or options.state or {}
@@ -142,6 +161,7 @@ return function(options)
     store.watch = wrap_watch(store)
     store.unwatch = wrap_unwatch(store)
     store.getters = wrap_getters(store)
+    store.bind_state = wrap_bind_state(store)
     
     for k, v in pairs(state) do
         state[k] = v

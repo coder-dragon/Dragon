@@ -114,7 +114,7 @@ namespace Dragon.Loaders
         /// <summary>
         /// 强制清理所有资源加载器，慎用
         /// </summary>
-        public static void UnLoadAll()
+        public static void UnloadAll()
         {
             foreach (var cache in _cacheLoaders.Values)
             {

@@ -17,6 +17,10 @@ local coroutine = {}
 local co_timers = {}
 setmetatable(co_timers, {__mode = "kv"})
 
+--- 开启协同
+--- @param func function 协同方法
+--- @param ... any 协同方法参数
+--- @return table 协同对象 
 function coroutine.start(func, ...)
     local co = create(func)
     if running() == nil then
@@ -45,6 +49,11 @@ function coroutine.start(func, ...)
     return co
 end
 
+--- 等待协同 秒
+--- @param t number 等待时间 秒
+--- @param co table 协同对象 默认为当前运行中的协同
+--- @param ... any 协同方法参数
+--- @return any yield返回值
 function coroutine.wait(t, co, ...)
     local args = {...}
     local co = co or running()
@@ -64,6 +73,11 @@ function coroutine.wait(t, co, ...)
     return yield()
 end
 
+--- 等待协同 帧
+--- @param t number 等待帧数
+--- @param co table 协同对象
+--- @param ... any 协同方法参数
+--- @return any yield返回值
 function coroutine.step(t, co, ...)
     local args = {...}
     local co = co or running()
@@ -83,6 +97,8 @@ function coroutine.step(t, co, ...)
     return yield()
 end
 
+--- 停止协同程序
+--- @param co table 协同对象
 function coroutine.stop(co)
     local timer = co_timers[co]
     if timer ~= nil then
@@ -91,6 +107,7 @@ function coroutine.stop(co)
     end
 end
 
+--- 停止所有协同程序
 function coroutine.stop_all()
     for co, timer in pairs(co_timers) do
         co_timers[co] = nil
@@ -98,7 +115,22 @@ function coroutine.stop_all()
     end
 end
 
---异步方法转同步, 只能在协程中执行
+--- 异步方法转同步, 只能在协程中执行
+--- Demo:
+--- function async_func(param, next)
+---     异步操作
+---     next(result)
+--- end
+---
+--- local sync = coroutine.async_to_sync(async_func)
+---
+--- coroutine.start(function()
+---     local result = sync(param)
+---end)
+---
+--- @param async_func function 异步方法
+--- @param callback_pos number 异步方法回调参数位置
+--- @return function 可在协程方法中进行同步调用的异步方法
 function coroutine.async_to_sync(async_func, callback_pos)
     return function(...)
         local _co = coroutine.running() or error("this function must be run in coroutine")
