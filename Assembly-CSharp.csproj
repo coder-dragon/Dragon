@@ -46,8 +46,10 @@
      <Compile Include="Assets\XLua\util\Xxtea.cs" />
      <Compile Include="Assets\XLua\Examples\01_Helloworld\Helloworld.cs" />
      <Compile Include="Assets\Dragon\Pooling\GameObjectPool.cs" />
+     <Compile Include="Assets\Rescources(AssetBundle)\Guide\EventPermeate.cs" />
      <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest.cs" />
      <Compile Include="Assets\XLua\Src\LuaDLL.cs" />
+     <Compile Include="Assets\Rescources(AssetBundle)\Guide\GuildeButton.cs" />
      <Compile Include="Assets\Dragon\MonoEventListeners\UIBehaviourEventListener.cs" />
      <Compile Include="Assets\Dragon\Loaders\AssetLoadMode.cs" />
      <Compile Include="Assets\Dragon\GameObjectExtenstion.cs" />
@@ -59,6 +61,7 @@
      <Compile Include="Assets\Dragon\MonoEventListeners\EventHandler.cs" />
      <Compile Include="Assets\Samples\Addressables.CN\1.18.0\Addressables Utility\AddressablesUtility.cs" />
      <Compile Include="Assets\Dragon\Loaders\AssetBundleManifestRepository.cs" />
+     <Compile Include="Assets\Rescources(AssetBundle)\Guide\Guide.cs" />
      <Compile Include="Assets\Dragon\Loaders\AssetLoaderFluentExtension.cs" />
      <Compile Include="Assets\Rescources(AssetBundle)\2D Sort Demo\SpriteClick.cs" />
      <Compile Include="Assets\Dragon\XLuaModul.cs" />
@@ -121,6 +124,7 @@
      <Compile Include="Assets\Dragon\Pooling\IObjectPool.cs" />
      <Compile Include="Assets\XLua\Src\ObjectCasters.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_RawImageWrap.cs" />
+     <Compile Include="Assets\Rescources(AssetBundle)\Navigation Demo\ClickNav.cs" />
      <Compile Include="Assets\Dragon\IGameEngine.cs" />
      <Compile Include="Assets\XLua\Src\SignatureLoader.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_ImageWrap.cs" />
@@ -172,9 +176,11 @@
      <Compile Include="Assets\Dragon\Loaders\AssetLoaderBase.cs" />
      <Compile Include="Assets\Dragon\MonoEventListeners\EventTriggerListener.cs" />
      <Compile Include="Assets\Dragon\Logging\UnityConsoleLogger.cs" />
+     <Compile Include="Assets\Rescources(AssetBundle)\UGUI\MyImage.cs" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
      <None Include="Assets\XLua\Gen\link.xml" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
+     <None Include="Assets\Rescources(AssetBundle)\Guide\GuideMask.shader" />
      <None Include="Assets\XLua\Examples\03_UIEvent\ButtonInteraction.lua.txt" />
      <None Include="Assets\XLua\Examples\02_U3DScripting\LuaTestScript.lua.txt" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
