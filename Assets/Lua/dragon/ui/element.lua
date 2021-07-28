@@ -19,6 +19,7 @@ local Dragon = CS.Dragon
 local LuaInjectionType = typeof(Dragon.LuaExtensions.LuaInjection)
 
 local M = dragon.class()
+
 M.overridemetatable = function(t, mt)
     mt.__gc = function(self)
         self:release(true)
@@ -128,6 +129,7 @@ function M:release(gc)
 end
 
 -- 当element加载时
+---on_load
 function M:on_load()
     if self.res and not self.gameobject then
         local ok, result = self.app.res.load(self.res)

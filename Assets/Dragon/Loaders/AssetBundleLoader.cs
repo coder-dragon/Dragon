@@ -60,7 +60,34 @@ namespace Dragon.Loaders
             _runCoroutine = CoroutineManager.StartCoroutine(loadAssetBundle());
         }
 
-         private IEnumerator loadAssetBundle()
+        /// <summary>
+        /// 当加载器需要被释放时调用此方法。
+        /// </summary>
+        protected override void OnDispose()
+        {
+            if (_dependencyLoaders != null)
+            {
+                foreach (var dependencyLoader in _dependencyLoaders)
+                    AssetLoaderPool.Put(dependencyLoader);
+                _dependencyLoaders = null;
+            }
+
+            if (_runCoroutine != null)
+                CoroutineManager.StopCoroutine(_runCoroutine);
+
+            if (_loadDependcyCoroutine != null)
+                CoroutineManager.StopCoroutine(_loadDependcyCoroutine);
+
+            if (_streamAssetBundleLoader != null)
+            {
+                AssetLoaderPool.Put(_streamAssetBundleLoader);
+                _streamAssetBundleLoader = null;
+            }
+
+            base.OnDispose();
+        }
+
+        private IEnumerator loadAssetBundle()
          {
              _log.Verbose($"开始加载：{Uri}");
              // manifest文件也在bundle中，加载初始manifest时不需要查找依赖

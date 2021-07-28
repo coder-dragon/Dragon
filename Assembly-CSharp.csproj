@@ -46,10 +46,10 @@
      <Compile Include="Assets\XLua\util\Xxtea.cs" />
      <Compile Include="Assets\XLua\Examples\01_Helloworld\Helloworld.cs" />
      <Compile Include="Assets\Dragon\Pooling\GameObjectPool.cs" />
-     <Compile Include="Assets\Rescources(AssetBundle)\Guide\EventPermeate.cs" />
+     <Compile Include="Assets\Demo\Guide\EventPermeate.cs" />
      <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest.cs" />
      <Compile Include="Assets\XLua\Src\LuaDLL.cs" />
-     <Compile Include="Assets\Rescources(AssetBundle)\Guide\GuildeButton.cs" />
+     <Compile Include="Assets\Demo\Guide\GuildeButton.cs" />
      <Compile Include="Assets\Dragon\MonoEventListeners\UIBehaviourEventListener.cs" />
      <Compile Include="Assets\Dragon\Loaders\AssetLoadMode.cs" />
      <Compile Include="Assets\Dragon\GameObjectExtenstion.cs" />
@@ -61,9 +61,8 @@
      <Compile Include="Assets\Dragon\MonoEventListeners\EventHandler.cs" />
      <Compile Include="Assets\Samples\Addressables.CN\1.18.0\Addressables Utility\AddressablesUtility.cs" />
      <Compile Include="Assets\Dragon\Loaders\AssetBundleManifestRepository.cs" />
-     <Compile Include="Assets\Rescources(AssetBundle)\Guide\Guide.cs" />
+     <Compile Include="Assets\Demo\Guide\Guide.cs" />
      <Compile Include="Assets\Dragon\Loaders\AssetLoaderFluentExtension.cs" />
-     <Compile Include="Assets\Rescources(AssetBundle)\2D Sort Demo\SpriteClick.cs" />
      <Compile Include="Assets\Dragon\XLuaModul.cs" />
      <Compile Include="Assets\Dragon\Pooling\DefaultPoolStrategy.cs" />
      <Compile Include="Assets\XLua\Src\Utils.cs" />
@@ -102,7 +101,7 @@
      <Compile Include="Assets\Dragon\CoroutineManager.cs" />
      <Compile Include="Assets\Dragon\Loaders\AssetLoaderCallback.cs" />
      <Compile Include="Assets\XLua\Gen\PackUnpack.cs" />
-     <Compile Include="Assets\Rescources(AssetBundle)\2D Sort Demo\ButtonTest.cs" />
+     <Compile Include="Assets\Dragon\Fsm\FsmState.cs" />
      <Compile Include="Assets\Dragon\ILuaModul.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_ToggleGroupWrap.cs" />
      <Compile Include="Assets\XLua\Gen\Dragon_LuaExtensions_UnityEngineObjectExtentionWrap.cs" />
@@ -111,6 +110,7 @@
      <Compile Include="Assets\XLua\Examples\07_AsyncTest\MessageBox.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_Toggle_ToggleEventWrap.cs" />
      <Compile Include="Assets\Dragon\IUpdatable.cs" />
+     <Compile Include="Assets\Demo\UGUI\MyImage\ColorTest.cs" />
      <Compile Include="Assets\Dragon\Bootstrap.cs" />
      <Compile Include="Assets\XLua\Src\GenAttributes.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_Events_UnityEventBaseWrap.cs" />
@@ -124,7 +124,7 @@
      <Compile Include="Assets\Dragon\Pooling\IObjectPool.cs" />
      <Compile Include="Assets\XLua\Src\ObjectCasters.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_RawImageWrap.cs" />
-     <Compile Include="Assets\Rescources(AssetBundle)\Navigation Demo\ClickNav.cs" />
+     <Compile Include="Assets\Demo\Navigation Demo\ClickNav.cs" />
      <Compile Include="Assets\Dragon\IGameEngine.cs" />
      <Compile Include="Assets\XLua\Src\SignatureLoader.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_ImageWrap.cs" />
@@ -136,6 +136,7 @@
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_ScrollRectWrap.cs" />
      <Compile Include="Assets\Dragon\Loaders\AssetBundleLoader.cs" />
      <Compile Include="Assets\XLua\Src\LuaEnv.cs" />
+     <Compile Include="Assets\Dragon\Fsm\IFsm.cs" />
      <Compile Include="Assets\Dragon\LuaExtensions\UnityEngineObjectExtention.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_ScrollRect_ScrollRectEventWrap.cs" />
      <Compile Include="Assets\Dragon\Singleton.cs" />
@@ -149,8 +150,8 @@
      <Compile Include="Assets\Dragon\LuaExtensions\LuaFieldPair.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_DropdownWrap.cs" />
      <Compile Include="Assets\Dragon\Utilities\DontDestroyOnLoad.cs" />
-     <Compile Include="Assets\XLua\Gen\UnityEngine_UI_Slider_SliderEventWrap.cs" />
      <Compile Include="Assets\Dragon\Pooling\PoolGameObject.cs" />
+     <Compile Include="Assets\XLua\Gen\UnityEngine_UI_Slider_SliderEventWrap.cs" />
      <Compile Include="Assets\Samples\Addressables.CN\1.18.0\Prefab Spawner\PrefabSpawnerSample.cs" />
      <Compile Include="Assets\XLua\Examples\07_AsyncTest\AsyncTest.cs" />
      <Compile Include="Assets\Dragon\Loaders\StreamAssetBundleLoader.cs" />
@@ -161,10 +162,11 @@
      <Compile Include="Assets\Dragon\UI\UILayerOrder.cs" />
      <Compile Include="Assets\XLua\Examples\09_GenericMethod\GenericMethodExample.cs" />
      <Compile Include="Assets\XLua\Src\GenericDelegateBridge.cs" />
+     <Compile Include="Assets\Demo\UGUI\SlicedImage\SlicedImage.cs" />
      <Compile Include="Assets\XLua\Src\CopyByValue.cs" />
      <Compile Include="Assets\Dragon\Pooling\PoolStategy.cs" />
-     <Compile Include="Assets\XLua\Src\StaticLuaCallbacks.cs" />
      <Compile Include="Assets\XLua\Src\LuaAsset.cs" />
+     <Compile Include="Assets\XLua\Src\StaticLuaCallbacks.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_ButtonWrap.cs" />
      <Compile Include="Assets\Dragon\MonoEventListeners\App.cs" />
      <Compile Include="Assets\XLua\Gen\Dragon_GameObjectExtenstionWrap.cs" />
@@ -172,18 +174,21 @@
      <Compile Include="Assets\XLua\Src\InternalGlobals.cs" />
      <Compile Include="Assets\Dragon\LogManager.cs" />
      <Compile Include="Assets\Dragon\Pooling\PoolInflationType.cs" />
+     <Compile Include="Assets\Demo\UGUI\MyImage\MyImage.cs" />
      <Compile Include="Assets\Dragon\IAssetLoader.cs" />
      <Compile Include="Assets\Dragon\Loaders\AssetLoaderBase.cs" />
      <Compile Include="Assets\Dragon\MonoEventListeners\EventTriggerListener.cs" />
      <Compile Include="Assets\Dragon\Logging\UnityConsoleLogger.cs" />
-     <Compile Include="Assets\Rescources(AssetBundle)\UGUI\MyImage.cs" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
      <None Include="Assets\XLua\Gen\link.xml" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
-     <None Include="Assets\Rescources(AssetBundle)\Guide\GuideMask.shader" />
+     <None Include="Assets\XLua\Gen\Resources\hotfix_id_map.lua.txt" />
+     <None Include="Assets\Demo\Guide\GuideMask.shader" />
+     <None Include="Assets\Scripts\com.unity.ugui@1.0.0\package.json" />
      <None Include="Assets\XLua\Examples\03_UIEvent\ButtonInteraction.lua.txt" />
      <None Include="Assets\XLua\Examples\02_U3DScripting\LuaTestScript.lua.txt" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
+     <None Include="Assets\Demo\Shader\Property\Property.shader" />
      <None Include="Assets\XLua\CHANGELOG.txt" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources\cs_coroutine.lua.txt" />
      <Reference Include="UnityEngine">
@@ -783,9 +788,6 @@
      <Reference Include="Unity.Addressables">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
@@ -794,9 +796,6 @@
      </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TextMeshPro">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ScriptableBuildPipeline">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
@@ -813,20 +812,22 @@
      <Reference Include="Unity.ScriptableBuildPipeline.Editor">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEditor.UI">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>C:/Project/Unity-Project/Dragon/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{ba0782bd-65a1-0313-9a96-f2ce29344554}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{44a156b8-d078-6900-4c9b-586025b40e49}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

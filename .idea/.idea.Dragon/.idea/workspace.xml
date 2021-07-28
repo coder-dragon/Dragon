@@ -2,24 +2,129 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/Guide.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/Guide.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMaterial.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMaterial.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuildeButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/EventPermeate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/EventPermeate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/Guide.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/Guide.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/Guide.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/Guide.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuideMask.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuideMask.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuideMaterial.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuideMaterial.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuildeButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuildeButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/ClickNav.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/ClickNav.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Gray.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Gray.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Navigation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Navigation.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Navigation.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Navigation/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Navigation/NavMesh.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/MainTex.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/MainTex.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/Normal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/Normal.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/heitao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/heitao.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/Layout.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/Layout/layout.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/Layout/layout.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/ColorTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/ColorTest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/IMG_20150802_124916.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/IMG_20150802_124916.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/MyImage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/MyImage.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/UGUI.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/UGUI.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/IMG_20150802_124916 1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/IMG_20150802_124916 1.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/Sliced Image.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/Sliced Image.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/SlicedImage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/SlicedImage.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Dragon/Fsm.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Dragon/Fsm/FsmState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Dragon/Fsm/FsmState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Dragon/Fsm/IFsm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Dragon/Fsm/IFsm.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Resources/hotfix_id_map.lua.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Resources/hotfix_id_map.lua.txt.20210716215516892" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Resources/hotfix_id_map.lua.txt.20210716215516892.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Resources/hotfix_id_map.lua.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassDiagram1.cd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Packages_com.unity.ugui_Tests_Editor_Canvas_Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/Dragon/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Dragon/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/collections/tree/tree.lua.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dragon.PathUtility.GetPersistentDataPath()/StandaloneWindows64/example-loadelement-elementgameobject.b_assets_all_d8415214843a164f6eab074e41fb5874.bundle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dragon.PathUtility.GetPersistentDataPath()/StandaloneWindows64/example-loadgameobject-gameobject.b_assets_all_109a400c297c0b1b5113fae34e507a44.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetBundleLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetBundleLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/2D Sort Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/2D Sort Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/ButtonTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/ButtonTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/New Sprite Atlas.spriteatlasv2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/New Sprite Atlas.spriteatlasv2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/Sprite Atlas.spriteatlasv2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/Sprite Atlas.spriteatlasv2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/SpriteClick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/SpriteClick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/beibao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/beibao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/btn user login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/btn user login.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/btn wechat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/btn wechat.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/EventPermeate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/EventPermeate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/Guide.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/Guide.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/Guide.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/Guide.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMask.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMask.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuildeButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuildeButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/ClickNav.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/ClickNav.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Gray.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Gray.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Navigation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Navigation.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Navigation.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Navigation/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Navigation/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/IMG_20150802_124916.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/IMG_20150802_124916.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/MyImage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/MyImage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/UGUI.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/UGUI.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dragon.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Dragon.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker2-prev.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
@@ -50,78 +155,75 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/2b/e13cc0dd/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BDF294DD-C04D-432B-BBAA-BC0D9641F286/3b/b19e661c/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/d9/1b42b548/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dragon/DragonEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Editor/TestBehaviourBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/0f/5a876eb7/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/GridLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/72/0bfa3503/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables.cn@1.18.0/Editor/Settings/AddressablesFileEnumeration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IPoolStrategy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8DF8F2F-772E-4D15-8A06-FE517F55B026/f0/d1c12232/ICanvasRaycastFilter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuildeButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/PoolGameObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables.cn@1.18.0/Tests/Runtime/SyncAddressableTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D1EB443-9232-48B1-8289-94AABE8AE823/95/72201591/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/b6/9f0b54ef/Debug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/f8/e99c580c/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/c4/9171d421/ListPool`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/D8DF8F2F-772E-4D15-8A06-FE517F55B026/47/89d804df/02000009.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/CGIncludes/UnityShaderUtilities.cginc" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.scriptablebuildpipeline@1.18.0/Tests/Editor/CalculateAssetDependencyTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.5/Editor/Utilities/TypeUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/AnimationTriggers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Button/ButtonTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/DefaultControls.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/CGIncludes/UnityCG.cginc" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BDF294DD-C04D-432B-BBAA-BC0D9641F286/29/26706050/ISubmitHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables.cn@1.18.0/Runtime/ResourceManager/AsyncOperations/DownloadStatus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/92/bb3af6e9/ISerializationCallbackReceiver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/cf/b555f9a2/DataUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/ae/bb0d46e2/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Canvas/CreateSceneUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/xLua-master/Assets/XLua/Examples/12_ReImplementInLua/ReImplementInLua.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/2b/e13cc0dd/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Animation/CoroutineTween.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BDF294DD-C04D-432B-BBAA-BC0D9641F286/3b/b19e661c/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/d9/1b42b548/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dragon/DragonEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8DF8F2F-772E-4D15-8A06-FE517F55B026/f0/d1c12232/ICanvasRaycastFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Dropdown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Bootstrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/CoroutineManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables.cn@1.18.0/Tests/Runtime/SyncAddressableTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/GameObjectExtenstion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2D1EB443-9232-48B1-8289-94AABE8AE823/b8/e2511b5b/Func`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Canvas/CanvasGroupInheritedAlpha.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/XLua/Gen/Dragon_Pooling_GameObjectPoolWrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8DF8F2F-772E-4D15-8A06-FE517F55B026/2a/ae3702f8/CanvasRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Pooling/IPoolable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontFeaturesCommon.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/3b/e0ffdac6/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Canvas/SiblingOrderChangesLayout.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/Canvas/BridgeScriptForRetainingObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BDF294DD-C04D-432B-BBAA-BC0D9641F286/84/d643a9e4/IEventSystemHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Program Files/Unity 2021.1.9f1c1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8DF8F2F-772E-4D15-8A06-FE517F55B026/59/70b76dec/RectTransformUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables.cn@1.18.0/Runtime/ResourceManager/ResourceProviders/TextDataProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D8DF8F2F-772E-4D15-8A06-FE517F55B026/22/768a9be3/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/LuaInjectionUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/EditorOnly/ProjectPath.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.5.5/Editor/Utilities/TypeUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/ILuaModul.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/IUpdatable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/7b/9da8f265/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoadMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/3b/45b4a4a0/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderCallback.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BDF294DD-C04D-432B-BBAA-BC0D9641F286/29/26706050/ISubmitHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables.cn@1.18.0/Runtime/ResourceManager/AsyncOperations/DownloadStatus.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/92/bb3af6e9/ISerializationCallbackReceiver.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/ae/bb0d46e2/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/xLua-master/Assets/XLua/Examples/12_ReImplementInLua/ReImplementInLua.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Hall2020/Assets/Blaze/Scripts/UI/RaycastBlocker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/c4/b0c182ab/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/695D1CC9-3CCA-4506-9C52-8C15C9FDD749/05/9de8e052/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/create-route-map.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/util/resolve-components.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/core/promise.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/router.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/abstract.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/history/base.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/create-matcher.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/view.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/init.lua" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetLoaderPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/event.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/monoevent.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/init.lua" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Bootstrap.cs" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/coroutine.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/xlua/util.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/xlua/init.lua" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/XLuaExportSetting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/XLuaModul.cs" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/ui/activity.lua" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/UI/UILayerOrder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dragon/UI/UILayer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Lua/config/ui.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/dragon/app.lua" />
-      <option value="$PROJECT_DIR$/Assets/Lua/app.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/ui/init.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/config.lua" />
       <option value="$PROJECT_DIR$/Assets/Lua/dragon/collections/tree.lua" />
@@ -148,6 +250,31 @@
       <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMask.shader" />
       <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/EventPermeate.cs" />
       <option value="$PROJECT_DIR$/Assets/Dragon/Editor/LuaExtensions/LuaInjectionInspector.cs" />
+      <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/ButtonTest.cs" />
+      <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" />
+      <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A22C1679-9369-4195-824D-43EA0FD6E13A/7b/9da8f265/InvokableCall.cs" />
+      <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/MyImage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/ColorTest2.cs" />
+      <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
+      <option value="$PROJECT_DIR$/Assets/Dragon/Bootstrap.cs" />
+      <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" />
+      <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/ColorTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/TouchInputModule.cs" />
+      <option value="$PROJECT_DIR$/Assets/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" />
+      <option value="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/SlicedImage/SlicedImage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Dragon/Fsm/FsmState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Dragon/Fsm/IFsm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/com.unity.ugui@1.0.0/Editor/UI/ImageEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/array.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/ui/activity.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" />
+      <option value="$PROJECT_DIR$/Assets/Lua/dragon/router/route.lua" />
+      <option value="$PROJECT_DIR$/Assets/Demo/Shader/Demo.shader" />
+      <option value="$PROJECT_DIR$/Assets/Demo/Shader/Demo/Demo.shader" />
+      <option value="$PROJECT_DIR$/Assets/Demo/Guide/Guide.cs" />
+      <option value="$PROJECT_DIR$/Assets/Demo/Shader/Property/Property.shader" />
+      <option value="$PROJECT_DIR$/../Hall2020/Assets/Blaze/Scripts/UI/RaycastBlocker.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tu9pqzgatG2HR6s3lJoFBmZNLS" />
@@ -163,18 +290,22 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3501355" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.41633147" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.42069632" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Lua Application.func.lua">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" runType="运行单个请求">
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -228,11 +359,13 @@
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
       <item itemvalue="Emmy Debugger(NEW).EmmyLua" />
+      <item itemvalue="HTTP 请求.rest-api#1" />
       <item itemvalue="Lua Application.func.lua" />
       <item itemvalue="Lua Application.main.lua" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP 请求.rest-api#1" />
         <item itemvalue="Lua Application.func.lua" />
         <item itemvalue="Lua Application.main.lua" />
       </list>
@@ -290,6 +423,22 @@
       <workItem from="1626184635355" duration="41000" />
       <workItem from="1626184715508" duration="236000" />
       <workItem from="1626184982718" duration="693000" />
+      <workItem from="1626287671139" duration="3872000" />
+      <workItem from="1626359206361" duration="4234000" />
+      <workItem from="1626435673931" duration="2266000" />
+      <workItem from="1626438077398" duration="2493000" />
+      <workItem from="1626441424099" duration="2598000" />
+      <workItem from="1626444621666" duration="10113000" />
+      <workItem from="1626462370673" duration="222000" />
+      <workItem from="1626462617178" duration="503000" />
+      <workItem from="1626463167962" duration="660000" />
+      <workItem from="1626507863255" duration="30871000" />
+      <workItem from="1626699231206" duration="5551000" />
+      <workItem from="1626788955377" duration="8751000" />
+      <workItem from="1626885108650" duration="5311000" />
+      <workItem from="1627318843862" duration="2194000" />
+      <workItem from="1627376706948" duration="1592000" />
+      <workItem from="1627466905213" duration="14542000" />
     </task>
     <task id="LOCAL-00001" summary="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆">
       <created>1623737777104</created>
@@ -375,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625256720996</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="--- 一些demo学习的代码">
+      <created>1626287717677</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1626287717677</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,6 +561,21 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -421,7 +592,20 @@
     <MESSAGE value="-- 柯里化函数的实现" />
     <MESSAGE value="-- vue 路由路径解析&#10;-- unity 2d demo场景&#10;-- 可控制全局变量声明的管理器" />
     <MESSAGE value="-- vue router编写完成(未经测试的版本)" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- vue router编写完成(未经测试的版本)" />
+    <MESSAGE value="--- 一些demo学习的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="--- 一些demo学习的代码" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs</url>
+          <line>290</line>
+          <properties documentPath="C:\Project\Unity-Project\Dragon\Library\PackageCache\com.unity.ugui@1.0.0\Runtime\UI\Core\Graphic.cs" initialLine="290" containingFunctionPresentation="method 'SetVerticesDirty'" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
