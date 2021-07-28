@@ -1,135 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Demo.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/EventPermeate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/EventPermeate.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/Guide.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/Guide.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/Guide.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/Guide.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuideMask.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuideMask.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuideMaterial.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuideMaterial.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuildeButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Guide/GuildeButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/ClickNav.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/ClickNav.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Gray.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Gray.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Navigation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Navigation.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Navigation.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Navigation/NavMesh.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Navigation Demo/Navigation/NavMesh.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/MainTex.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/MainTex.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/Normal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/Normal.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/heitao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/Shader/Property/heitao.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/Layout.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/Layout/layout.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/Layout/layout.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/ColorTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/ColorTest.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/IMG_20150802_124916.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/IMG_20150802_124916.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/MyImage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/MyImage.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/UGUI.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/MyImage/UGUI.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/IMG_20150802_124916 1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/IMG_20150802_124916 1.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/Sliced Image.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/Sliced Image.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/SlicedImage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Demo/UGUI/SlicedImage/SlicedImage.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dragon/Fsm.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dragon/Fsm/FsmState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dragon/Fsm/FsmState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dragon/Fsm/IFsm.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Dragon/Fsm/IFsm.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Resources/hotfix_id_map.lua.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Resources/hotfix_id_map.lua.txt.20210716215516892" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Resources/hotfix_id_map.lua.txt.20210716215516892.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/XLua/Gen/Resources/hotfix_id_map.lua.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ClassDiagram1.cd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Packages_com.unity.ugui_Tests_Editor_Canvas_Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Dragon/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Dragon/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetBundleLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dragon/Loaders/AssetBundleLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lua/dragon/ui/element.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/2D Sort Demo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/2D Sort Demo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/ButtonTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/ButtonTest.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/New Sprite Atlas.spriteatlasv2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/New Sprite Atlas.spriteatlasv2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/Sprite Atlas.spriteatlasv2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/Sprite Atlas.spriteatlasv2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/SpriteClick.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/SpriteClick.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/beibao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/beibao.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/btn user login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/btn user login.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/btn wechat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/2D Sort Demo/btn wechat.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/EventPermeate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/EventPermeate.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/Guide.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/Guide.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/Guide.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/Guide.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMask.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMask.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuideMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuildeButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Guide/GuildeButton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/ClickNav.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/ClickNav.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Gray.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Gray.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Navigation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Navigation.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Navigation.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Navigation/NavMesh.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/Navigation Demo/Navigation/NavMesh.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/IMG_20150802_124916.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/IMG_20150802_124916.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/MyImage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/MyImage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/UGUI.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Rescources(AssetBundle)/UGUI/UGUI.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dragon.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Dragon.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-    </list>
+    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="-- 把UGUI框架脚本从pacage中提取出来，以及几个demo示例" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -438,7 +310,7 @@
       <workItem from="1626885108650" duration="5311000" />
       <workItem from="1627318843862" duration="2194000" />
       <workItem from="1627376706948" duration="1592000" />
-      <workItem from="1627466905213" duration="14542000" />
+      <workItem from="1627466905213" duration="14999000" />
     </task>
     <task id="LOCAL-00001" summary="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆">
       <created>1623737777104</created>
@@ -531,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626287717677</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="-- 把UGUI框架脚本从pacage中提取出来，以及几个demo示例">
+      <created>1627490409632</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1627490409632</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,7 +472,8 @@
     <MESSAGE value="-- vue 路由路径解析&#10;-- unity 2d demo场景&#10;-- 可控制全局变量声明的管理器" />
     <MESSAGE value="-- vue router编写完成(未经测试的版本)" />
     <MESSAGE value="--- 一些demo学习的代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="--- 一些demo学习的代码" />
+    <MESSAGE value="-- 把UGUI框架脚本从pacage中提取出来，以及几个demo示例" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- 把UGUI框架脚本从pacage中提取出来，以及几个demo示例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
