@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="-- 把UGUI框架脚本从pacage中提取出来，以及几个demo示例" />
+    <list default="true" id="6b7479c6-aeaa-41a0-b732-4d769a2ee6f7" name="Default Changelist" comment="-- UGUI批处理的demo">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dragon/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -310,7 +312,7 @@
       <workItem from="1626885108650" duration="5311000" />
       <workItem from="1627318843862" duration="2194000" />
       <workItem from="1627376706948" duration="1592000" />
-      <workItem from="1627466905213" duration="14999000" />
+      <workItem from="1627466905213" duration="16273000" />
     </task>
     <task id="LOCAL-00001" summary="-- 新增对象池管理器&#10;-- 新增GameObject扩展方法，可以直接通过方法从对象池中获取自身的克隆">
       <created>1623737777104</created>
@@ -410,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627490409632</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="-- UGUI批处理的demo">
+      <created>1627497973792</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1627497973792</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +482,8 @@
     <MESSAGE value="-- vue router编写完成(未经测试的版本)" />
     <MESSAGE value="--- 一些demo学习的代码" />
     <MESSAGE value="-- 把UGUI框架脚本从pacage中提取出来，以及几个demo示例" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- 把UGUI框架脚本从pacage中提取出来，以及几个demo示例" />
+    <MESSAGE value="-- UGUI批处理的demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- UGUI批处理的demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
